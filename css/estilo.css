@@ -1,0 +1,80 @@
+.btn-grande{
+	width: 200px;
+	height: 100px;
+	font-size: 18pt;
+	    background-image: -webkit-linear-gradient(top, #ffdd1c, #F39C12);
+	    background-image: -moz-linear-gradient(top, #ffdd1c, #F39C12);
+	    background-image: -ms-linear-gradient(top, #ffdd1c, #F39C12);
+	    background-image: -o-linear-gradient(top, #ffdd1c, #F39C12);
+	    background-image: linear-gradient(to bottom, #ffdd1c, #F39C12);
+	}
+
+.btn-footer{
+	width: 200px;
+	height: 50px;
+	font-size: 16pt;
+    background-color: rgba(0, 140, 73, 0.6);
+    border-color:rgba(72, 70, 76, 0.1);
+    background-color: rgba(72, 70, 76, 0.1);
+    color:#afafaf;
+}
+
+#botonesIzquierda > .btn-grande{
+	margin-left: 30px;
+}
+
+.fondo{
+	background-image: url("/interFaces/images/fondo.png");
+}
+
+.header{
+	height: 80px;
+	background-color: rgba(0, 0, 0, 0.3); 
+}
+
+.infoRoster{
+	color: #F39C12;
+}
+
+.tablaInfoRoster{
+	border-collapse: separate;
+	border-spacing: 10px;
+}
+
+.tablaInfoRoster td {
+	font-size: 8pt;
+}
+
+body{
+	overflow: hidden;  
+}
+
+
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+#principal {
+	min-height: 100%;
+	margin: 0 auto -205px; /* the bottom margin is the negative value of the footer's height */
+}
+
+
+.footer{
+	background-color: rgba(0, 0, 0, 0.2); 
+	height: 80px;
+}
+
+.flechaIzq{
+	font-size: 30pt;
+	margin-left: -40px;
+	color: #afafaf;
+}
+
+.flechaDer{
+	font-size: 30pt;
+	margin-left: 60px;
+	color: #afafaf;
+}
