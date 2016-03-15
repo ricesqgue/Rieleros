@@ -38,7 +38,7 @@ function rotarInfo(num){
 }
 
 
-//Funcion para cambiar entre diferentes divs, recibe el numero de div y la direccion.
+//Funcion para cambiar entre diferentes divs, recibe el numero de div y la direccion. Son solo 3 divs.. si son más agregar los 'if'.
 function cambiaRoster(num,direccion){
             if(num==='1'){
                 $("#roster2").addClass("animated fadeOut"+direccion);

@@ -2,11 +2,12 @@
 	width: 200px;
 	height: 100px;
 	font-size: 18pt;
-	    background-image: -webkit-linear-gradient(top, #ffdd1c, #F39C12);
-	    background-image: -moz-linear-gradient(top, #ffdd1c, #F39C12);
-	    background-image: -ms-linear-gradient(top, #ffdd1c, #F39C12);
-	    background-image: -o-linear-gradient(top, #ffdd1c, #F39C12);
-	    background-image: linear-gradient(to bottom, #ffdd1c, #F39C12);
+    background-image: -webkit-linear-gradient(top, #ffdd1c, #F39C12);
+    background-image: -moz-linear-gradient(top, #ffdd1c, #F39C12);
+    background-image: -ms-linear-gradient(top, #ffdd1c, #F39C12);
+    background-image: -o-linear-gradient(top, #ffdd1c, #F39C12);
+    background-image: linear-gradient(to bottom, #ffdd1c, #F39C12);
+    color: #0B2161;
 	}
 
 .btn-footer{
