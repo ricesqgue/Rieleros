@@ -2,23 +2,42 @@
 	width: 200px;
 	height: 100px;
 	font-size: 18pt;
-    background-image: -webkit-linear-gradient(top, #ffdd1c, #F39C12);
-    background-image: -moz-linear-gradient(top, #ffdd1c, #F39C12);
-    background-image: -ms-linear-gradient(top, #ffdd1c, #F39C12);
-    background-image: -o-linear-gradient(top, #ffdd1c, #F39C12);
-    background-image: linear-gradient(to bottom, #ffdd1c, #F39C12);
-    color: #0B2161;
-	}
+	background-image: linear-gradient(to bottom, #ffdd1c, #F39C12);
+	color: #0B2161;
+}
+.btn-grande:hover{
+	color:#0B2161;
+}
+
+.btn-grande:visited{
+	color:#0B2161;
+}
+
+.btn-grande:focus {
+	color:#0B2161;
+}
 
 .btn-footer{
 	width: 200px;
 	height: 50px;
 	font-size: 16pt;
-    background-color: rgba(0, 140, 73, 0.6);
-    border-color:rgba(72, 70, 76, 0.1);
-    background-color: rgba(72, 70, 76, .2);
-    color:#afafaf;
-    text-align: center;
+	border-color:rgba(72, 70, 76, 0.1);
+	background-color: rgba(72, 70, 76, .2);
+	color:#afafaf;
+	text-align: center;
+}
+
+
+
+.btn-regresar{
+	margin-top: -10px;
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	background-color: rgba(72, 70, 76, .2);
+	border:2px;
+	color:#afafaf;
+	font-size: 18px;
 }
 
 #botonesIzquierda > .btn-grande{
@@ -26,7 +45,7 @@
 }
 
 .fondo{
-	background-image: url("/interFaces/images/fondo.png");
+	background-image: url("../images/fondo.png");
 }
 
 .header{
@@ -79,4 +98,25 @@ html, body {
 	font-size: 30pt;
 	margin-left: 60px;
 	color: #afafaf;
+}
+
+.flechaIzqHistoria{
+	font-size: 30pt;
+	margin-left: -40px;
+	color: #afafaf;
+	margin-top: 170px;
+}
+
+.flechaDerHistoria{
+	font-size: 30pt;
+	margin-left: 60px;
+	color: #afafaf;
+	margin-top: 170px;
+}
+
+
+
+.titulo{
+	font-size: 22pt;
+	text-shadow: 0px 0px 15px #fff;
 }

@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/animate.css">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body class="fondo">
     <!--Header-->
@@ -20,827 +20,833 @@
                     </center>
                 </div>
                 
-                <div class="col-md-1 col-md-offset-4">
+                <div class="col-md-3 col-md-offset-3">
                     <center>
-                        <img width="150px" src="images/rieleros.png"  onclick="animate('swing','logoRieleros1')" id="logoRieleros1">
+                     <!-- <img width="150px" src="images/rieleros.png"  onclick="animate('swing','logoRieleros1')" id="logoRieleros1">-->
+                     <br>
+                     <span class="titulo" style="margin-left: 100px;">E Q U I P O</span>                       
+                 </center>
+             </div>
+
+             <div class="col-md-1 col-md-offset-4">
+                <center>
+                    <img width="80px" src="images/LMB.png" onclick="animate('wobble','logoLMB')" id="logoLMB">
+                </center>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<br><br>
+
+<!--Cuerpo-->
+<div id="principal">
+    <div id="roster1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 ">
+                    <div id="jugador1-img" onclick="rotarImg(1)">
+                        <center>
+                            <img src="images/roster/SaulSoto.jpg" alt="" >
+                            <p class='label label-default'>C | Saul Soto</p>
+                        </center>
+                    </div>
+                    <div id="jugador1-info" class="hidden" onclick="rotarInfo(1)">
+                        <center>
+                            <span class="infoRoster">Saul Soto</span>
+                            <p>Los Mochis, Sinaloa</p>
+                            <p>10/08/1978</p>
+                            <table class="tablaInfoRoster">
+                                <thead>
+                                    <th>Pos.</th>
+                                    <th>Est.</th>
+                                    <th>Peso</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Catcher</td>
+                                        <td>1.93m</td>
+                                        <td>111 kgs</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </center>
+                        <audio id="soundPlayer1" src="sounds/SaulSoto.mp3"></audio>
+                    </div>
+
+                </div>
+
+                <div class="col-md-3 ">
+                    <div id="jugador2-img" onclick="rotarImg(2)">
+                        <center> 
+                            <img src="images/roster/LorenzoBarcelo.jpg" alt="" >
+                            <p class='label label-default'>P | Lorenzo Barceló</p>
+                        </center>
+                    </div>
+                    <div id="jugador2-info" class="hidden" onclick="rotarInfo(2)">
+                        <center>
+                            <span class="infoRoster">Lorenzo Barceló</span>
+                            <p>San Pedro de Macoris, República Dominicana</p>
+                            <p>10/08/1977</p>
+                            <table class="tablaInfoRoster">
+                                <thead>
+                                    <th>Pos.</th>
+                                    <th>Est.</th>
+                                    <th>Peso</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pitcher</td>
+                                        <td>1.93m</td>
+                                        <td>104 kgs</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </center>
+                    </div>
+                </div>
+
+                <div class="col-md-3 ">
+                    <div id="jugador3-img" onclick="rotarImg(3)">
+                        <center>
+                            <img src="images/roster/MaximoNelson.jpg" alt="" >
+                            <p class='label label-default'>P | Máximo Nelson</p>
+                        </center>
+                    </div>
+                    <div id="jugador3-info" class="hidden" onclick="rotarInfo(3)">
+                        <center>
+                            <span class="infoRoster">Máximo Nelson</span>
+                            <p>Santo Domingo, República Dominicana</p>
+                            <p>21/04/1982</p>
+                            <table class="tablaInfoRoster">
+                                <thead>
+                                    <th>Pos.</th>
+                                    <th>Est.</th>
+                                    <th>Peso</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Pitcher</td>
+                                        <td>1.93m</td>
+                                        <td>104 kgs</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </center>
+                    </div>
+                </div>
+
+                <div class="col-md-3 ">
+                    <div id="jugador4-img" onclick="rotarImg(4)">
+                        <center>
+                            <img src="images/roster/OmarMendoza.jpg" alt="" >
+                            <p class='label label-default'>3B | Omar Mendoza</p>
+                        </center>
+                    </div>
+                    <div id="jugador4-info" class="hidden" onclick="rotarInfo(4)">
+                        <center>
+                            <span class="infoRoster">Omar Mendoza</span>
+                            <p>Tihuatlán, Veracruz</p>
+                            <p>18/01/1983</p>
+                            <table class="tablaInfoRoster">
+                                <thead>
+                                    <th>Pos.</th>
+                                    <th>Est.</th>
+                                    <th>Peso</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>3B</td>
+                                        <td>1.81m</td>
+                                        <td>95 kgs</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-1">
+                    <span class="glyphicon glyphicon-menu-left flechaIzq" onclick="cambiaRoster('3','Left')"></span> 
+                </div>
+                <div class="col-md-1 col-md-offset-10">
+                   <span class="glyphicon glyphicon-menu-right flechaDer" onclick="cambiaRoster('2','Right')"></span>
+               </div>
+           </div>
+           
+           <br>
+
+
+           <div class="row">
+
+            <div class="col-md-3 ">
+                <div id="jugador5-img" onclick="rotarImg(5)">
+                    <center>
+                        <img src="images/roster/OrlandoLara.jpg" alt="" >
+                        <p class='label label-default'>P | Orlando Lara</p>
                     </center>
                 </div>
-                
-                <div class="col-md-1 col-md-offset-5">
+                <div id="jugador5-info" class="hidden" onclick="rotarInfo(5)">
                     <center>
-                        <img width="80px" src="images/LMB.png" onclick="animate('wobble','logoLMB')" id="logoLMB">
+                        <span class="infoRoster">Orlando Lara</span>
+                        <p>Cosamaloapan, México</p>
+                        <p>20/05/1985</p>
+                        <table class="tablaInfoRoster">
+                            <thead>
+                                <th>Pos.</th>
+                                <th>Est.</th>
+                                <th>Peso</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Pitcher</td>
+                                    <td>1.88m</td>
+                                    <td>96 kgs</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div id="jugador6-img" onclick="rotarImg(6)">
+                    <center>
+                        <img src="images/roster/Orrantia.jpg" alt="" >
+                        <p class='label label-default'>2B | Carlos Orrantia</p>
+                    </center>
+                </div>
+                <div id="jugador6-info" class="hidden" onclick="rotarInfo(6)">
+                    <center>
+                        <span class="infoRoster">Carlos Orrantia</span>
+                        <p>Los Mochis, Sinaloa</p>
+                        <p>26/12/1981</p>
+                        <table class="tablaInfoRoster">
+                            <thead>
+                                <th>Pos.</th>
+                                <th>Est.</th>
+                                <th>Peso</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2B</td>
+                                    <td>1.82m</td>
+                                    <td>95 kgs</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div id="jugador7-img" onclick="rotarImg(7)">
+                    <center>
+                        <img src="images/roster/OscarLemus.jpg" alt="" >
+                        <p class='label label-default'>C | Oscar Lemus</p>
+                    </center>
+                </div>
+                <div id="jugador7-info" class="hidden" onclick="rotarInfo(7)">
+                    <center>
+                        <span class="infoRoster">Oscar Lemus</span>
+                        <p>San Luis, Chihuahua</p>
+                        <p>07/10/1986</p>
+                        <table class="tablaInfoRoster">
+                            <thead>
+                                <th>Pos.</th>
+                                <th>Est.</th>
+                                <th>Peso</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Catcher</td>
+                                    <td>1.79m</td>
+                                    <td>88 kgs</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div id="jugador8-img" onclick="rotarImg(8)">
+                    <center>
+                        <img src="images/roster/OswaldoPacheco.jpg" alt="" >
+                        <p class='label label-default'>P | Oswaldo Pacheco</p>
+                    </center>
+                </div>
+                <div id="jugador8-info" class="hidden" onclick="rotarInfo(8)">
+                    <center>
+                        <span class="infoRoster">Oswaldo Pacheco</span>
+                        <p>Durango, México</p>
+                        <p>03/02/1992</p>
+                        <table class="tablaInfoRoster">
+                            <thead>
+                                <th>Pos.</th>
+                                <th>Est.</th>
+                                <th>Peso</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Pitcher</td>
+                                    <td>1.82m</td>
+                                    <td>93 kgs</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </center>
                 </div>
             </div>
         </div>
+    </div>  
+</div>
+
+<div id="roster2" class="hidden">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 ">
+                <div id="jugador9-img" onclick="rotarImg(9)">
+                    <center>
+                        <img src="images/roster/RamonRamirez.jpg" alt="" >
+                        <p class='label label-default'>RF | Ramón Ramírez</p>
+                    </center>
+                </div>
+                <div id="jugador9-info" class="hidden" onclick="rotarInfo(9)">
+                    <center>
+                        <span class="infoRoster">Ramón Ramírez</span>
+                        <p>Los Mochis, Sinaloa</p>
+                        <p>13/09/1990</p>
+                        <table class="tablaInfoRoster">
+                            <thead>
+                                <th>Pos.</th>
+                                <th>Est.</th>
+                                <th>Peso</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Left Fielder</td>
+                                    <td>1.92m</td>
+                                    <td>101 kgs</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div id="jugador10-img" onclick="rotarImg(10)">
+                    <center>
+                        <img src="images/roster/RembertoRomo.jpg" alt="" >
+                        <p class='label label-default'>P | Remberto Romo</p>
+                    </center>
+                </div>
+                <div id="jugador10-info" class="hidden" onclick="rotarInfo(10)">
+                    <center>
+                        <span class="infoRoster">Remberto Romo</span>
+                        <p>Culiacán, Sinaloa</p>
+                        <p>10/08/1977</p>
+                        <table class="tablaInfoRoster">
+                            <thead>
+                                <th>Pos.</th>
+                                <th>Est.</th>
+                                <th>Peso</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Pitcher</td>
+                                    <td>1.84</td>
+                                    <td>90 kgs</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div id="jugador11-img" onclick="rotarImg(11)">
+                    <center>
+                        <img src="images/roster/RoyElliotCorcoran.jpg" alt="" >
+                        <p class='label label-default'>P | Roy Corcoran</p>
+                    </center>
+                </div>
+                <div id="jugador11-info" class="hidden" onclick="rotarInfo(11)">
+                    <center>
+                        <span class="infoRoster">Roy Corcoran</span>
+                        <p>Baton Rouge, LA</p>
+                        <p>11/05/1980</p>
+                        <table class="tablaInfoRoster">
+                            <thead>
+                                <th>Pos.</th>
+                                <th>Est.</th>
+                                <th>Peso</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Pitcher</td>
+                                    <td>1.85m</td>
+                                    <td>98 kgs</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div id="jugador12-img" onclick="rotarImg(12)">
+                    <center>
+                        <img src="images/roster/JulioMontoya.jpg" alt="" >
+                        <p class='label label-default'>P | Julio Montoya</p>
+                    </center>
+                </div>
+                <div id="jugador12-info" class="hidden" onclick="rotarInfo(12)">
+                    <center>
+                        <span class="infoRoster">Julio Montoya</span>
+                        <p>Mazatlán, Sinaloa</p>
+                        <p>29/09/1993</p>
+                        <table class="tablaInfoRoster">
+                            <thead>
+                                <th>Pos.</th>
+                                <th>Est.</th>
+                                <th>Peso</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Pitcher</td>
+                                    <td>1.86m</td>
+                                    <td>100 kgs</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-1">
+                <span class="glyphicon glyphicon-menu-left flechaIzq" onclick="cambiaRoster('1','Left')"></span> 
+            </div>
+            <div class="col-md-1 col-md-offset-10">
+               <span class="glyphicon glyphicon-menu-right flechaDer" onclick="cambiaRoster('3','Right')"></span>
+           </div>
+       </div>
+
+       <br>
+
+
+       <div class="row">
+
+        <div class="col-md-3 ">
+            <div id="jugador13-img" onclick="rotarImg(13)">
+                <center>
+                    <img src="images/roster/JulianCastro.jpg" alt="" >
+                    <p class='label label-default'>SS | Julián Castro</p>
+                </center>
+            </div>
+            <div id="jugador13-info" class="hidden" onclick="rotarInfo(13)">
+                <center>
+                    <span class="infoRoster">Julián Castro</span>
+                    <p>Mérida, Yucatán</p>
+                    <p>24/04/1989</p>
+                    <table class="tablaInfoRoster">
+                        <thead>
+                            <th>Pos.</th>
+                            <th>Est.</th>
+                            <th>Peso</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Shortstop</td>
+                                <td>1.83m</td>
+                                <td>92 kgs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </center>
+            </div>
+        </div>
+
+        <div class="col-md-3 ">
+            <div id="jugador14-img" onclick="rotarImg(14)">
+                <center>
+                    <img src="images/roster/JulianArballo.jpg" alt="" >
+                    <p class='label label-default'>P | Julián Arballo</p>
+                </center>
+            </div>
+            <div id="jugador14-info" class="hidden" onclick="rotarInfo(14)">
+                <center>
+                    <span class="infoRoster">Julián Arballo</span>
+                    <p>Los Angeles, California</p>
+                    <p>26/12/1981</p>
+                    <table class="tablaInfoRoster">
+                        <thead>
+                            <th>Pos.</th>
+                            <th>Est.</th>
+                            <th>Peso</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pitcher</td>
+                                <td>1.87m</td>
+                                <td>102 kgs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </center>
+            </div>
+        </div>
+
+        <div class="col-md-3 ">
+            <div id="jugador15-img" onclick="rotarImg(15)">
+                <center>
+                    <img src="images/roster/JoseReneReyes.jpg" alt="" >
+                    <p class='label label-default'>OF | José René Reyes</p>
+                </center>
+            </div>
+            <div id="jugador15-info" class="hidden" onclick="rotarInfo(15)">
+                <center>
+                    <span class="infoRoster">José René Reyes</span>
+                    <p>Margarita, Venezuela</p>
+                    <p>21/02/1978</p>
+                    <table class="tablaInfoRoster">
+                        <thead>
+                            <th>Pos.</th>
+                            <th>Est.</th>
+                            <th>Peso</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Outfielder</td>
+                                <td>1.82m</td>
+                                <td>97 kgs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </center>
+            </div>
+        </div>
+
+        <div class="col-md-3 ">
+            <div id="jugador16-img" onclick="rotarImg(16)">
+                <center>
+                    <img src="images/roster/JoseLopezCruz.jpg" alt="" >
+                    <p class='label label-default'>P | José López Cruz</p>
+                </center>
+            </div>
+            <div id="jugador16-info" class="hidden" onclick="rotarInfo(16)">
+                <center>
+                    <span class="infoRoster">José López Cruz</span>
+                    <p>Rincón de Romos, Aguascalientes</p>
+                    <p>03/05/1989</p>
+                    <table class="tablaInfoRoster">
+                        <thead>
+                            <th>Pos.</th>
+                            <th>Est.</th>
+                            <th>Peso</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Pitcher</td>
+                                <td>1.78m</td>
+                                <td>85 kgs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </center>
+            </div>
+        </div>
     </div>
-    
+</div>  
+</div>
 
-    <br><br>
-
-    <!--Cuerpo-->
-    <div id="principal">
-        <div id="roster1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 ">
-                        <div id="jugador1-img" onclick="rotarImg(1)">
-                            <center>
-                                <img src="images/roster/SaulSoto.jpg" alt="" >
-                                <p class='label label-default'>C | Saul Soto</p>
-                            </center>
-                        </div>
-                        <div id="jugador1-info" class="hidden" onclick="rotarInfo(1)">
-                            <center>
-                                <span class="infoRoster">Saul Soto</span>
-                                <p>Los Mochis, Sinaloa</p>
-                                <p>10/08/1978</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Catcher</td>
-                                            <td>1.93m</td>
-                                            <td>111 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 ">
-                        <div id="jugador2-img" onclick="rotarImg(2)">
-                            <center>
-                                <img src="images/roster/LorenzoBarcelo.jpg" alt="" >
-                                <p class='label label-default'>P | Lorenzo Barceló</p>
-                            </center>
-                        </div>
-                        <div id="jugador2-info" class="hidden" onclick="rotarInfo(2)">
-                            <center>
-                                <span class="infoRoster">Lorenzo Barceló</span>
-                                <p>San Pedro de Macoris, República Dominicana</p>
-                                <p>10/08/1977</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Pitcher</td>
-                                            <td>1.93m</td>
-                                            <td>104 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 ">
-                        <div id="jugador3-img" onclick="rotarImg(3)">
-                            <center>
-                                <img src="images/roster/MaximoNelson.jpg" alt="" >
-                                <p class='label label-default'>P | Máximo Nelson</p>
-                            </center>
-                        </div>
-                        <div id="jugador3-info" class="hidden" onclick="rotarInfo(3)">
-                            <center>
-                                <span class="infoRoster">Máximo Nelson</span>
-                                <p>Santo Domingo, República Dominicana</p>
-                                <p>21/04/1982</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Pitcher</td>
-                                            <td>1.93m</td>
-                                            <td>104 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 ">
-                        <div id="jugador4-img" onclick="rotarImg(4)">
-                            <center>
-                                <img src="images/roster/OmarMendoza.jpg" alt="" >
-                                <p class='label label-default'>3B | Omar Mendoza</p>
-                            </center>
-                        </div>
-                        <div id="jugador4-info" class="hidden" onclick="rotarInfo(4)">
-                            <center>
-                                <span class="infoRoster">Omar Mendoza</span>
-                                <p>Tihuatlán, Veracruz</p>
-                                <p>18/01/1983</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>3B</td>
-                                            <td>1.81m</td>
-                                            <td>95 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
+<div id="roster3" class="hidden">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 ">
+                <div id="jugador17-img" onclick="rotarImg(17)">
+                    <center>
+                        <img src="images/roster/JoseJuanLopez.jpg" alt="" >
+                        <p class='label label-default'>1B | José Juan López</p>
+                    </center>
                 </div>
-
-                <div class="row">
-                    <div class="col-md-1">
-                        <span class="glyphicon glyphicon-menu-left flechaIzq" onclick="cambiaRoster('3','Left')"></span> 
-                    </div>
-                    <div class="col-md-1 col-md-offset-10">
-                         <span class="glyphicon glyphicon-menu-right flechaDer" onclick="cambiaRoster('2','Right')"></span>
-                    </div>
+                <div id="jugador17-info" class="hidden" onclick="rotarInfo(17)">
+                    <center>
+                        <span class="infoRoster">José Juan López</span>
+                        <p>Tijuana, Baja California</p>
+                        <p>13/09/1982</p>
+                        <table class="tablaInfoRoster">
+                            <thead>
+                                <th>Pos.</th>
+                                <th>Est.</th>
+                                <th>Peso</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1B</td>
+                                    <td>1.79m</td>
+                                    <td>95 kgs</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
                 </div>
-           
-                <br>
+            </div>
 
-            
-                <div class="row">
-                    
-                    <div class="col-md-3 ">
-                        <div id="jugador5-img" onclick="rotarImg(5)">
-                            <center>
-                                <img src="images/roster/OrlandoLara.jpg" alt="" >
-                                <p class='label label-default'>P | Orlando Lara</p>
-                            </center>
-                        </div>
-                        <div id="jugador5-info" class="hidden" onclick="rotarInfo(5)">
-                            <center>
-                                <span class="infoRoster">Orlando Lara</span>
-                                <p>Cosamaloapan, México</p>
-                                <p>20/05/1985</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Pitcher</td>
-                                            <td>1.88m</td>
-                                            <td>96 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 ">
-                        <div id="jugador6-img" onclick="rotarImg(6)">
-                            <center>
-                                <img src="images/roster/Orrantia.jpg" alt="" >
-                                <p class='label label-default'>2B | Carlos Orrantia</p>
-                            </center>
-                        </div>
-                        <div id="jugador6-info" class="hidden" onclick="rotarInfo(6)">
-                            <center>
-                                <span class="infoRoster">Carlos Orrantia</span>
-                                <p>Los Mochis, Sinaloa</p>
-                                <p>26/12/1981</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>2B</td>
-                                            <td>1.82m</td>
-                                            <td>95 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 ">
-                        <div id="jugador7-img" onclick="rotarImg(7)">
-                            <center>
-                                <img src="images/roster/OscarLemus.jpg" alt="" >
-                                <p class='label label-default'>C | Oscar Lemus</p>
-                            </center>
-                        </div>
-                        <div id="jugador7-info" class="hidden" onclick="rotarInfo(7)">
-                            <center>
-                                <span class="infoRoster">Oscar Lemus</span>
-                                <p>San Luis, Chihuahua</p>
-                                <p>07/10/1986</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Catcher</td>
-                                            <td>1.79m</td>
-                                            <td>88 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 ">
-                        <div id="jugador8-img" onclick="rotarImg(8)">
-                            <center>
-                                <img src="images/roster/OswaldoPacheco.jpg" alt="" >
-                                <p class='label label-default'>P | Oswaldo Pacheco</p>
-                            </center>
-                        </div>
-                        <div id="jugador8-info" class="hidden" onclick="rotarInfo(8)">
-                            <center>
-                                <span class="infoRoster">Oswaldo Pacheco</span>
-                                <p>Durango, México</p>
-                                <p>03/02/1992</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Pitcher</td>
-                                            <td>1.82m</td>
-                                            <td>93 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
+            <div class="col-md-3 ">
+                <div id="jugador18-img" onclick="rotarImg(18)">
+                    <center>
+                        <img src="images/roster/JesseCastillo.jpg" alt="" >
+                        <p class='label label-default'>3B | Jesse Castillo</p>
+                    </center>
                 </div>
-            </div>  
+                <div id="jugador18-info" class="hidden" onclick="rotarInfo(18)">
+                    <center>
+                        <span class="infoRoster">Jesse Castillo</span>
+                        <p>Mexicali, Baja California</p>
+                        <p>03/03/1983</p>
+                        <table class="tablaInfoRoster">
+                            <thead>
+                                <th>Pos.</th>
+                                <th>Est.</th>
+                                <th>Peso</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>3B</td>
+                                    <td>1.85</td>
+                                    <td>93 kgs</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div id="jugador19-img" onclick="rotarImg(19)">
+                    <center>
+                        <img src="images/roster/HeribertoRuelasIza.jpg" alt="" >
+                        <p class='label label-default'>C | Heriberto Ruelas Iza</p>
+                    </center>
+                </div>
+                <div id="jugador19-info" class="hidden" onclick="rotarInfo(19)">
+                    <center>
+                        <span class="infoRoster">Heriberto Ruelas Iza</span>
+                        <p>Los Mochis, Sinaloa</p>
+                        <p>11/05/1980</p>
+                        <table class="tablaInfoRoster">
+                            <thead>
+                                <th>Pos.</th>
+                                <th>Est.</th>
+                                <th>Peso</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Catcher</td>
+                                    <td>1.87m</td>
+                                    <td>105 kgs</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div id="jugador20-img" onclick="rotarImg(20)">
+                    <center>
+                        <img src="images/roster/FreddyQuintero.jpg" alt="" >
+                        <p class='label label-default'>CF | Fredy Quintero</p>
+                    </center>
+                </div>
+                <div id="jugador20-info" class="hidden" onclick="rotarInfo(20)">
+                    <center>
+                        <span class="infoRoster">Fredy Quintero</span>
+                        <p>Los Mochis, Sinaloa</p>
+                        <p>23/04/1987</p>
+                        <table class="tablaInfoRoster">
+                            <thead>
+                                <th>Pos.</th>
+                                <th>Est.</th>
+                                <th>Peso</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Center fielder</td>
+                                    <td>1.82m</td>
+                                    <td>87 kgs</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </center>
+                </div>
+            </div>
         </div>
 
-        <div id="roster2" class="hidden">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 ">
-                        <div id="jugador9-img" onclick="rotarImg(9)">
-                            <center>
-                                <img src="images/roster/RamonRamirez.jpg" alt="" >
-                                <p class='label label-default'>RF | Ramón Ramírez</p>
-                            </center>
-                        </div>
-                        <div id="jugador9-info" class="hidden" onclick="rotarInfo(9)">
-                            <center>
-                                <span class="infoRoster">Ramón Ramírez</span>
-                                <p>Los Mochis, Sinaloa</p>
-                                <p>13/09/1990</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Left Fielder</td>
-                                            <td>1.92m</td>
-                                            <td>101 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
+        <div class="row">
+            <div class="col-md-1">
+                <span class="glyphicon glyphicon-menu-left flechaIzq" onclick="cambiaRoster('2','Left')"></span> 
+            </div>
+            <div class="col-md-1 col-md-offset-10">
+               <span class="glyphicon glyphicon-menu-right flechaDer" onclick="cambiaRoster('1','Right')"></span>
+           </div>
+       </div>
 
-                    <div class="col-md-3 ">
-                        <div id="jugador10-img" onclick="rotarImg(10)">
-                            <center>
-                                <img src="images/roster/RembertoRomo.jpg" alt="" >
-                                <p class='label label-default'>P | Remberto Romo</p>
-                            </center>
-                        </div>
-                        <div id="jugador10-info" class="hidden" onclick="rotarInfo(10)">
-                            <center>
-                                <span class="infoRoster">Remberto Romo</span>
-                                <p>Culiacán, Sinaloa</p>
-                                <p>10/08/1977</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Pitcher</td>
-                                            <td>1.84</td>
-                                            <td>90 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
+       <br>
 
-                    <div class="col-md-3 ">
-                        <div id="jugador11-img" onclick="rotarImg(11)">
-                            <center>
-                                <img src="images/roster/RoyElliotCorcoran.jpg" alt="" >
-                                <p class='label label-default'>P | Roy Corcoran</p>
-                            </center>
-                        </div>
-                        <div id="jugador11-info" class="hidden" onclick="rotarInfo(11)">
-                            <center>
-                                <span class="infoRoster">Roy Corcoran</span>
-                                <p>Baton Rouge, LA</p>
-                                <p>11/05/1980</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Pitcher</td>
-                                            <td>1.85m</td>
-                                            <td>98 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
 
-                    <div class="col-md-3 ">
-                        <div id="jugador12-img" onclick="rotarImg(12)">
-                            <center>
-                                <img src="images/roster/JulioMontoya.jpg" alt="" >
-                                <p class='label label-default'>P | Julio Montoya</p>
-                            </center>
-                        </div>
-                        <div id="jugador12-info" class="hidden" onclick="rotarInfo(12)">
-                            <center>
-                                <span class="infoRoster">Julio Montoya</span>
-                                <p>Mazatlán, Sinaloa</p>
-                                <p>29/09/1993</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Pitcher</td>
-                                            <td>1.86m</td>
-                                            <td>100 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
-                </div>
+       <div class="row">
 
-                <div class="row">
-                    <div class="col-md-1">
-                        <span class="glyphicon glyphicon-menu-left flechaIzq" onclick="cambiaRoster('1','Left')"></span> 
-                    </div>
-                    <div class="col-md-1 col-md-offset-10">
-                         <span class="glyphicon glyphicon-menu-right flechaDer" onclick="cambiaRoster('3','Right')"></span>
-                    </div>
-                </div>
-           
-                <br>
-
-            
-                <div class="row">
-                    
-                    <div class="col-md-3 ">
-                        <div id="jugador13-img" onclick="rotarImg(13)">
-                            <center>
-                                <img src="images/roster/JulianCastro.jpg" alt="" >
-                                <p class='label label-default'>SS | Julián Castro</p>
-                            </center>
-                        </div>
-                        <div id="jugador13-info" class="hidden" onclick="rotarInfo(13)">
-                            <center>
-                                <span class="infoRoster">Julián Castro</span>
-                                <p>Mérida, Yucatán</p>
-                                <p>24/04/1989</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Shortstop</td>
-                                            <td>1.83m</td>
-                                            <td>92 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 ">
-                        <div id="jugador14-img" onclick="rotarImg(14)">
-                            <center>
-                                <img src="images/roster/JulianArballo.jpg" alt="" >
-                                <p class='label label-default'>P | Julián Arballo</p>
-                            </center>
-                        </div>
-                        <div id="jugador14-info" class="hidden" onclick="rotarInfo(14)">
-                            <center>
-                                <span class="infoRoster">Julián Arballo</span>
-                                <p>Los Angeles, California</p>
-                                <p>26/12/1981</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Pitcher</td>
-                                            <td>1.87m</td>
-                                            <td>102 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 ">
-                        <div id="jugador15-img" onclick="rotarImg(15)">
-                            <center>
-                                <img src="images/roster/JoseReneReyes.jpg" alt="" >
-                                <p class='label label-default'>OF | José René Reyes</p>
-                            </center>
-                        </div>
-                        <div id="jugador15-info" class="hidden" onclick="rotarInfo(15)">
-                            <center>
-                                <span class="infoRoster">José René Reyes</span>
-                                <p>Margarita, Venezuela</p>
-                                <p>21/02/1978</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Outfielder</td>
-                                            <td>1.82m</td>
-                                            <td>97 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 ">
-                        <div id="jugador16-img" onclick="rotarImg(16)">
-                            <center>
-                                <img src="images/roster/JoseLopezCruz.jpg" alt="" >
-                                <p class='label label-default'>P | José López Cruz</p>
-                            </center>
-                        </div>
-                        <div id="jugador16-info" class="hidden" onclick="rotarInfo(16)">
-                            <center>
-                                <span class="infoRoster">José López Cruz</span>
-                                <p>Rincón de Romos, Aguascalientes</p>
-                                <p>03/05/1989</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Pitcher</td>
-                                            <td>1.78m</td>
-                                            <td>85 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-            </div>  
+        <div class="col-md-3 ">
+            <div id="jugador21-img" onclick="rotarImg(21)">
+                <center>
+                    <img src="images/roster/FranciscoMoreno.jpg" alt="" >
+                    <p class='label label-default'>SS | Francisco Moreno</p>
+                </center>
+            </div>
+            <div id="jugador21-info" class="hidden" onclick="rotarInfo(21)">
+                <center>
+                    <span class="infoRoster">Francisco Moreno</span>
+                    <p>Culiacán, Sinaloa</p>
+                    <p>24/03/1994</p>
+                    <table class="tablaInfoRoster">
+                        <thead>
+                            <th>Pos.</th>
+                            <th>Est.</th>
+                            <th>Peso</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Shortstop</td>
+                                <td>1.85m</td>
+                                <td>90 kgs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </center>
+            </div>
         </div>
 
-        <div id="roster3" class="hidden">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 ">
-                        <div id="jugador17-img" onclick="rotarImg(17)">
-                            <center>
-                                <img src="images/roster/JoseJuanLopez.jpg" alt="" >
-                                <p class='label label-default'>1B | José Juan López</p>
-                            </center>
-                        </div>
-                        <div id="jugador17-info" class="hidden" onclick="rotarInfo(17)">
-                            <center>
-                                <span class="infoRoster">José Juan López</span>
-                                <p>Tijuana, Baja California</p>
-                                <p>13/09/1982</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1B</td>
-                                            <td>1.79m</td>
-                                            <td>95 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 ">
-                        <div id="jugador18-img" onclick="rotarImg(18)">
-                            <center>
-                                <img src="images/roster/JesseCastillo.jpg" alt="" >
-                                <p class='label label-default'>3B | Jesse Castillo</p>
-                            </center>
-                        </div>
-                        <div id="jugador18-info" class="hidden" onclick="rotarInfo(18)">
-                            <center>
-                                <span class="infoRoster">Jesse Castillo</span>
-                                <p>Mexicali, Baja California</p>
-                                <p>03/03/1983</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>3B</td>
-                                            <td>1.85</td>
-                                            <td>93 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 ">
-                        <div id="jugador19-img" onclick="rotarImg(19)">
-                            <center>
-                                <img src="images/roster/HeribertoRuelasIza.jpg" alt="" >
-                                <p class='label label-default'>C | Heriberto Ruelas Iza</p>
-                            </center>
-                        </div>
-                        <div id="jugador19-info" class="hidden" onclick="rotarInfo(19)">
-                            <center>
-                                <span class="infoRoster">Heriberto Ruelas Iza</span>
-                                <p>Los Mochis, Sinaloa</p>
-                                <p>11/05/1980</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Catcher</td>
-                                            <td>1.87m</td>
-                                            <td>105 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 ">
-                        <div id="jugador20-img" onclick="rotarImg(20)">
-                            <center>
-                                <img src="images/roster/FreddyQuintero.jpg" alt="" >
-                                <p class='label label-default'>CF | Fredy Quintero</p>
-                            </center>
-                        </div>
-                        <div id="jugador20-info" class="hidden" onclick="rotarInfo(20)">
-                            <center>
-                                <span class="infoRoster">Fredy Quintero</span>
-                                <p>Los Mochis, Sinaloa</p>
-                                <p>23/04/1987</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Center fielder</td>
-                                            <td>1.82m</td>
-                                            <td>87 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-1">
-                        <span class="glyphicon glyphicon-menu-left flechaIzq" onclick="cambiaRoster('2','Left')"></span> 
-                    </div>
-                    <div class="col-md-1 col-md-offset-10">
-                         <span class="glyphicon glyphicon-menu-right flechaDer" onclick="cambiaRoster('1','Right')"></span>
-                    </div>
-                </div>
-           
-                <br>
-
-            
-                <div class="row">
-                    
-                    <div class="col-md-3 ">
-                        <div id="jugador21-img" onclick="rotarImg(21)">
-                            <center>
-                                <img src="images/roster/FranciscoMoreno.jpg" alt="" >
-                                <p class='label label-default'>SS | Francisco Moreno</p>
-                            </center>
-                        </div>
-                        <div id="jugador21-info" class="hidden" onclick="rotarInfo(21)">
-                            <center>
-                                <span class="infoRoster">Francisco Moreno</span>
-                                <p>Culiacán, Sinaloa</p>
-                                <p>24/03/1994</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Shortstop</td>
-                                            <td>1.85m</td>
-                                            <td>90 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 ">
-                        <div id="jugador22-img" onclick="rotarImg(22)">
-                            <center>
-                                <img src="images/roster/EstebanHaroSoto.jpg" alt="" >
-                                <p class='label label-default'>OF | Esteban Haro Soto</p>
-                            </center>
-                        </div>
-                        <div id="jugador22-info" class="hidden" onclick="rotarInfo(22)">
-                            <center>
-                                <span class="infoRoster">Esteban Haro Soto</span>
-                                <p>Los Angeles, California</p>
-                                <p>11/11/1987</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Outfilder</td>
-                                            <td>1.85m</td>
-                                            <td>98 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 ">
-                        <div id="jugador23-img" onclick="rotarImg(23)">
-                            <center>
-                                <img src="images/roster/EmmanuelTorres.jpg" alt="" >
-                                <p class='label label-default'>1B | Emmanuel Torres</p>
-                            </center>
-                        </div>
-                        <div id="jugador23-info" class="hidden" onclick="rotarInfo(23)">
-                            <center>
-                                <span class="infoRoster">Emmanuel Torres</span>
-                                <p>Rodríguez Clara, Veracruz</p>
-                                <p>21/02/1993</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1B</td>
-                                            <td>1.85m</td>
-                                            <td>97 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3 ">
-                        <div id="jugador24-img" onclick="rotarImg(24)">
-                            <center>
-                                <img src="images/roster/DannyRichar.jpg" alt="" >
-                                <p class='label label-default'>2B | Danny Richar</p>
-                            </center>
-                        </div>
-                        <div id="jugador24-info" class="hidden" onclick="rotarInfo(24)">
-                            <center>
-                                <span class="infoRoster">Danny Richar</span>
-                                <p>La Romana, Republica Dominicana</p>
-                                <p>06/06/1983</p>
-                                <table class="tablaInfoRoster">
-                                    <thead>
-                                        <th>Pos.</th>
-                                        <th>Est.</th>
-                                        <th>Peso</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>2B</td>
-                                            <td>1.85m</td>
-                                            <td>92 kgs</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </center>
-                        </div>
-                    </div>
-                </div>
-            </div>  
+        <div class="col-md-3 ">
+            <div id="jugador22-img" onclick="rotarImg(22)">
+                <center>
+                    <img src="images/roster/EstebanHaroSoto.jpg" alt="" >
+                    <p class='label label-default'>OF | Esteban Haro Soto</p>
+                </center>
+            </div>
+            <div id="jugador22-info" class="hidden" onclick="rotarInfo(22)">
+                <center>
+                    <span class="infoRoster">Esteban Haro Soto</span>
+                    <p>Los Angeles, California</p>
+                    <p>11/11/1987</p>
+                    <table class="tablaInfoRoster">
+                        <thead>
+                            <th>Pos.</th>
+                            <th>Est.</th>
+                            <th>Peso</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Outfilder</td>
+                                <td>1.85m</td>
+                                <td>98 kgs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </center>
+            </div>
         </div>
 
+        <div class="col-md-3 ">
+            <div id="jugador23-img" onclick="rotarImg(23)">
+                <center>
+                    <img src="images/roster/EmmanuelTorres.jpg" alt="" >
+                    <p class='label label-default'>1B | Emmanuel Torres</p>
+                </center>
+            </div>
+            <div id="jugador23-info" class="hidden" onclick="rotarInfo(23)">
+                <center>
+                    <span class="infoRoster">Emmanuel Torres</span>
+                    <p>Rodríguez Clara, Veracruz</p>
+                    <p>21/02/1993</p>
+                    <table class="tablaInfoRoster">
+                        <thead>
+                            <th>Pos.</th>
+                            <th>Est.</th>
+                            <th>Peso</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1B</td>
+                                <td>1.85m</td>
+                                <td>97 kgs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </center>
+            </div>
+        </div>
 
+        <div class="col-md-3 ">
+            <div id="jugador24-img" onclick="rotarImg(24)">
+                <center>
+                    <img src="images/roster/DannyRichar.jpg" alt="" >
+                    <p class='label label-default'>2B | Danny Richar</p>
+                </center>
+            </div>
+            <div id="jugador24-info" class="hidden" onclick="rotarInfo(24)">
+                <center>
+                    <span class="infoRoster">Danny Richar</span>
+                    <p>La Romana, Republica Dominicana</p>
+                    <p>06/06/1983</p>
+                    <table class="tablaInfoRoster">
+                        <thead>
+                            <th>Pos.</th>
+                            <th>Est.</th>
+                            <th>Peso</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2B</td>
+                                <td>1.85m</td>
+                                <td>92 kgs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </center>
+            </div>
+        </div>
     </div>
+</div>  
+</div>
 
-    <!--Footer-->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <br>
-                <div class="col-md-2 col-md-offset-5">
-                    <button class="btn btn-footer ">Regresar</button>
-                </div>
+
+</div>
+
+<!--Footer-->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <br>
+            <div class="col-md-1">
+                <button class="btn-regresar "  onclick="window.location.href='index.html'"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></button>
+
             </div>
         </div>   
     </div>
+</div>
 
 
-	<script src="js/jquery.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/rieleros.js"></script>
 </body>
 </html>
