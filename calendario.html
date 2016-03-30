@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Rieleros AGS</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body class="fondo">
+    <!--Header-->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1 ">
+                    <center>
+                        <img width="80px" src="images/logoRieleros.png" onclick="animate('tada','logoRieleros')" id="logoRieleros">
+                    </center>
+                </div>
+                
+                <div class="col-md-4 col-md-offset-3">
+                    <center>
+                     <!-- <img width="150px" src="images/rieleros.png"  onclick="animate('swing','logoRieleros1')" id="logoRieleros1">-->
+                        <br>
+                        <span class="titulo" style="margin-left: 0px;">C A L E N D A R I O</span>                       
+                    </center>
+                </div>
+
+                <div class="col-md-1 col-md-offset-3">
+                    <center>
+                        <img width="80px" src="images/LMB.png" onclick="animate('wobble','logoLMB')" id="logoLMB">
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<br>
+	<br>
+	<br>
+
+
+    <!--Cuerpo  style="margin: 0 auto -330px;"-->
+    <div id="principal" >
+    	<div class="row container-fluid">
+    		<div class="col-md-10 col-md-offset-1">
+				<div  id="calendario1">
+				<table class="table table-bordered">
+					<thead>
+						<tr>
+							<th class="mesCalendario" colspan="7">M A Y O</th>
+						</tr>
+						<tr class="diaSemana">
+							<th>Domingo</th>
+							<th>Lunes</th>
+							<th>Martes</th>
+							<th>Miércoles</th>
+							<th>Jueves</th>
+							<th>Viernes</th>
+							<th>Sábado</th>
+						</tr>
+					</thead>
+					<tbody class="diasCalendario">
+						<tr>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5 <br> <center><img src="images/equipos/Toros.png" width="70px" height="70px" alt="Toros"></center></td>
+							<td>6</td>
+							<td>7</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>9</td>
+							<td>10 <br> <center><img src="images/equipos/Aguilas.png" width="70px" height="70px" alt="Aguilas"></center></td>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+						</tr>
+						<tr>
+							<td>15</td>
+							<td>16</td>
+							<td>17</td>
+							<td>18</td>
+							<td>19</td>
+							<td>20</td>
+							<td>21 <br> <center><img src="images/equipos/pericos.png" width="70px" height="70px" alt="Pericos"></center></</td>
+						</tr>
+						<tr>
+							<td>22</td>
+							<td>23</td>
+							<td>24 <br> <center><img src="images/equipos/sultanes.png" width="70px" height="70px" alt="Sultanes"></center></</td>
+							<td>25</td>
+							<td>26</td>
+							<td>27</td>
+							<td>28</td>		
+						</tr>
+						<tr>
+							<td>29 <br> <center><img src="images/equipos/saraperos.png" width="70px" height="70px" alt="Saraperos"></center></</td>
+							<td>30</td>
+							<td>31</td>
+							<td class="diaNo">1</td>
+							<td class="diaNo">2</td>
+							<td class="diaNo">3</td>
+							<td class="diaNo">4</td>		
+						</tr>
+					</tbody>
+				</table>
+			</div>
+    		</div>
+
+    	</div>
+    </div>
+      
+    <div id="div-btn-regresar">
+            <button class="btn-regresar "  onclick="window.location.href='index.html'"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></button>
+    </div>
+   
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/rieleros.js"></script>
+    <script>
+        acomodaBotonRegresar();
+    </script>
+</body>
+</html>

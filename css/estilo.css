@@ -120,3 +120,24 @@ html, body {
 	font-size: 22pt;
 	text-shadow: 0px 0px 15px #fff;
 }
+
+.mesCalendario{
+	font-size: 18pt;
+	text-align: center;
+	text-shadow: 0px 0px 15px #fff;
+}
+
+.diaSemana > th{
+	text-align: center;
+
+}
+
+.diasCalendario > tr > td{
+	font-size: 10pt;
+	height: 100px;
+	width: 100px;
+}
+
+.diaNo{
+	color:#555;
+}
