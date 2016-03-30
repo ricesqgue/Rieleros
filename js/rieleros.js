@@ -137,3 +137,11 @@ function cambiaLinea(num,direccion){
         },400);
     }
 }
+
+function acomodaBotonRegresar(){
+    var ancho = screen.width/2;
+    $("#div-btn-regresar").css("position" , "absolute");
+    $("#div-btn-regresar").css("bottom" , "10px");
+    $("#div-btn-regresar").css("left" , ancho-40+"px");
+     
+}

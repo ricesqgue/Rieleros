@@ -42,8 +42,8 @@
     <br>
     <br>
 
-    <!--Cuerpo-->
-    <div id="principal" style="margin: 0 auto -330px;">
+    <!--Cuerpo  style="margin: 0 auto -330px;"-->
+    <div id="principal" >
         <div id="lineaTiempo1">
             <div class="container">
                 <div class="row">
@@ -83,7 +83,7 @@
                             <img src="images/historia/pelota2.jpg" alt="" style="width:100%;" >
                         </center>
                     </div>
-                    <div class="col-md-5 text-justify">
+                        <div class="col-md-5 text-justify">
                         <h1><strong>Primer liga en el estado</strong></h1><br>
                         <h4>
                            Surge a finales de 1920 y principios de 1930, fundada por los trabajadores del ferrocarril.
@@ -126,25 +126,19 @@
             </div>
         </div>
     </div>
-
-
-    <!--Footer-->
-<div class="footer">
-    <div class="container">
-        <div class="row">
-            <br>
-            <div class="col-md-1">
-                <button class="btn-regresar "  onclick="window.location.href='index.html'"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></button>
-
-            </div>
-        </div>   
+      
+    <div id="div-btn-regresar">
+            <button class="btn-regresar "  onclick="window.location.href='index.html'"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></button>
     </div>
-</div>
+   
 
 
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/rieleros.js"></script>
+    <script>
+        acomodaBotonRegresar();
+    </script>
 </body>
 </html>

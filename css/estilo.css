@@ -31,13 +31,13 @@
 
 .btn-regresar{
 	margin-top: -10px;
-	width: 60px;
-	height: 60px;
+	width: 80px;
+	height: 80px;
 	border-radius: 100%;
-	background-color: rgba(72, 70, 76, .2);
+	background-image: linear-gradient(to bottom, #ffdd1c, #F39C12);
 	border:2px;
-	color:#afafaf;
-	font-size: 18px;
+	color:#0B2161;
+	font-size: 28px;
 }
 
 #botonesIzquierda > .btn-grande{
@@ -78,8 +78,8 @@ html, body {
 	height: 100%;
 }
 #principal {
-	min-height: 100%;
-	margin: 0 auto -205px; /* the bottom margin is the negative value of the footer's height */
+	min-height: 80%
+	margin: 0 auto -80px; /*the bottom margin is the negative value of the footer's height*/
 }
 
 
