@@ -125,11 +125,12 @@ html, body {
 	font-size: 18pt;
 	text-align: center;
 	text-shadow: 0px 0px 15px #fff;
+	background-color: rgba(129, 131, 131, 0.2);
 }
 
 .diaSemana > th{
 	text-align: center;
-
+	
 }
 
 .diasCalendario > tr > td{
@@ -140,4 +141,14 @@ html, body {
 
 .diaNo{
 	color:#555;
+}
+
+table > thead > .diaSemana > th {
+	border-bottom-width: 4px;
+	border-bottom-color: #F39C12;
+}
+
+table > .diasCalendario > tr > .diaPartido {
+	border-left-width: 3px;
+	border-left-color: #F39C12
 }
