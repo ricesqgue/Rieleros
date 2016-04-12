@@ -152,3 +152,17 @@ table > .diasCalendario > tr > .diaPartido {
 	border-left-width: 3px;
 	border-left-color: #F39C12
 }
+
+.textoImagen{
+	position: absolute;
+	top:400px;
+	left: 236px;
+	width: 472px;
+	height: 70px;
+	background: rgba(0, 0, 0, 0.7);
+
+}
+
+.galeria{
+	position: relative;
+}

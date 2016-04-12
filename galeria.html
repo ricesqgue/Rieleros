@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rieleros AGS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body class="fondo">
+    <!--Header-->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1 ">
+                    <center>
+                        <img width="80px" src="images/logoRieleros.png" onclick="animate('tada','logoRieleros')" id="logoRieleros">
+                    </center>
+                </div>
+                
+                <div class="col-md-4 col-md-offset-3">
+                    <center>
+                     <!-- <img width="150px" src="images/rieleros.png"  onclick="animate('swing','logoRieleros1')" id="logoRieleros1">-->
+                        <br>
+                        <span class="titulo" style="margin-left: 0px;">G A L E R I A</span>                       
+                    </center>
+                </div>
+
+                <div class="col-md-1 col-md-offset-3">
+                    <center>
+                        <img width="80px" src="images/LMB.png" onclick="animate('wobble','logoLMB')" id="logoLMB">
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <br><br><br>
+
+    <!--Cuerpo  style="margin: 0 auto -330px;"-->
+    <div id="principal" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <span class="glyphicon glyphicon-menu-left flechaIzq" id="flechaIzq" style="margin-top: 300px" onclick="cambiaGaleria('11','left')"></span>
+                </div>
+                <div class="col-md-10">
+
+                    <!--GALERIA-->
+
+                    <div id="galeria1" class="galeria">
+                        <center><img src="images/galeria/imagen1.png" width="100%" alt="" ></center>
+                        <span class="textoImagen"><center><h3>Rieleros y Delfines</h3></center></span>
+                    </div>
+
+                    <div id="galeria2" class="hidden">
+                        <center><img src="images/galeria/imagen2.png" width="100%" alt="" ></center>
+                    </div>
+
+                     <div id="galeria3" class="hidden">
+                        <center><img src="images/galeria/imagen3.png" width="100%" alt="" ></center>
+                         <span class="textoImagen"><center><h2>Firmando contrato</h2></center></span>
+                    </div>
+
+                     <div id="galeria4" class="hidden">
+                            <video width="100%" height="" id="video1">
+                              <source src="images\galeria\video1.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                    </div>
+
+                    <div id="galeria5" class="hidden galeria">
+                        <center><img src="images/galeria/imagen4.png" width="100%" alt="" ></center>
+                         
+                    </div>
+
+                    <div id="galeria6" class="hidden galeria">
+                        <center><img src="images/galeria/imagen5.png" width="100%" alt="" ></center>
+                         <span class="textoImagen"><center><h2>Entrenamiento</h2></center></span>
+                    </div>
+
+                     <div id="galeria7" class="hidden galeria">
+                        <center><img src="images/galeria/imagen6.png" width="100%" alt="" ></center>
+                         <span class="textoImagen"><center><h2>Nuestro equipo</h2></center></span>
+                    </div>
+
+                     <div id="galeria8" class="hidden galeria">
+                            <video width="100%" height="" id="video2">
+                              <source src="images\galeria\video2.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                            <span class="textoImagen"><center><h2>Último lanzamiento</h2></center></span>
+                    </div>
+
+                    <div id="galeria9" class="hidden galeria">
+                        <center><img src="images/galeria/imagen7.png" width="100%" alt="" ></center>
+                    </div>
+
+                    <div id="galeria10" class="hidden galeria">
+                        <center><img src="images/galeria/imagen8.png" width="100%" alt="" ></center>
+                         <span class="textoImagen"><center><h2>Celebración</h2></center></span>
+                    </div>
+
+
+                     <div id="galeria11" class="hidden galeria">
+                            <video width="100%" height="" id="video3">
+                              <source src="images\galeria\video3.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video>
+                    </div>
+                    <!--_____________________________________________-->
+
+                </div>
+                <div class="col-md-1">
+                    <span class="glyphicon glyphicon-menu-right flechaDer" id="flechaDer"  style="margin-top: 300px" onclick="cambiaGaleria('2','right')"></span>
+                </div>
+            </div>
+        </div>        
+    </div>
+      
+    <div id="div-btn-regresar">
+        <button class="btn-regresar " onclick="window.location.href='index.html'"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></button>
+    </div>
+   
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/rieleros.js"></script>
+
+    <script>
+        acomodaBotonRegresar();
+    </script>
+</body>
+</html>

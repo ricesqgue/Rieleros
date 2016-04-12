@@ -19,9 +19,13 @@ function rotarImg(num){
             infoJugador.addClass("animated flipInY")
         }, 600);
     setTimeout(function(){infoJugador.removeClass("animated flipInY")},500);
+    for(var i=1;i<25;i++){
+        document.getElementById("soundPlayer"+i).pause();
+        document.getElementById("soundPlayer"+i).currentTime = 0; 
+    }
+
     document.getElementById("soundPlayer"+num).play();
-    //$("#soundPlayer"+num).attr("autoplay","");
-    //$("#soundPlayer"+num).removeAttr("autoplay");
+
 
 }
 
@@ -144,4 +148,252 @@ function acomodaBotonRegresar(){
     $("#div-btn-regresar").css("bottom" , "10px");
     $("#div-btn-regresar").css("left" , ancho-40+"px");
      
+}
+
+function cambiaGaleria(num,direccion){
+    if(num==='1'){
+        $("#galeria2").addClass("animated fadeOut"+direccion);
+        $("#galeria11").addClass("animated fadeOut"+direccion);
+        setTimeout(function(){
+            $("#galeria11").addClass("hidden");
+            $("#galeria2").addClass("hidden");
+            $("#galeria1").removeClass("animated fadeIn");
+            $("#galeria2").removeClass("animated fadeOut"+direccion);
+            $("#galeria11").removeClass("animated fadeOut"+direccion);
+            $("#galeria1").removeClass('hidden');
+            $("#galeria1").addClass("animated fadeIn");
+        },400);
+        //video
+            document.getElementById('video3').pause();
+            document.getElementById('video3').currentTime = 0;
+            $("#flechaDer").removeAttr('onclick');
+            $("#flechaIzq").removeAttr('onclick');
+            $("#flechaDer").attr('onclick', "cambiaGaleria('2','right')");
+            $("#flechaIzq").attr('onclick', "cambiaGaleria('11','left')");
+
+
+
+    }
+    else if(num==='2'){
+
+        $("#galeria1").addClass("animated fadeOut"+direccion);
+        $("#galeria3").addClass("animated fadeOut"+direccion);
+        setTimeout(function(){
+            $("#galeria1").addClass("hidden");
+            $("#galeria3").addClass("hidden");
+            $("#galeria2").removeClass("animated fadeIn");
+            $("#galeria1").removeClass("animated fadeOut"+direccion);
+            $("#galeria3").removeClass("animated fadeOut"+direccion);
+            $("#galeria2").removeClass('hidden');
+            $("#galeria2").addClass("animated fadeIn");
+            
+        },400);
+
+            $("#flechaDer").removeAttr('onclick');
+            $("#flechaIzq").removeAttr('onclick');
+            $("#flechaDer").attr('onclick', "cambiaGaleria('3','right')");
+            $("#flechaIzq").attr('onclick', "cambiaGaleria('1','left')");
+    }
+    else if(num==='3'){
+
+        $("#galeria4").addClass("animated fadeOut"+direccion);
+        $("#galeria2").addClass("animated fadeOut"+direccion);
+        setTimeout(function(){
+            $("#galeria4").addClass("hidden");
+            $("#galeria2").addClass("hidden");
+            $("#galeria3").removeClass("animated fadeIn");
+            $("#galeria4").removeClass("animated fadeOut"+direccion);
+            $("#galeria2").removeClass("animated fadeOut"+direccion);
+
+            $("#galeria3").removeClass('hidden');
+            $("#galeria3").addClass("animated fadeIn");
+            //video
+            document.getElementById('video1').pause();
+            document.getElementById('video1').currentTime = 0;
+        },400);
+
+            $("#flechaDer").removeAttr('onclick');
+            $("#flechaIzq").removeAttr('onclick');
+            $("#flechaDer").attr('onclick', "cambiaGaleria('4','right')");
+            $("#flechaIzq").attr('onclick', "cambiaGaleria('2','left')");
+    }
+
+    else if(num==='4'){
+
+        $("#galeria5").addClass("animated fadeOut"+direccion);
+        $("#galeria3").addClass("animated fadeOut"+direccion);
+        setTimeout(function(){
+            $("#galeria5").addClass("hidden");
+            $("#galeria3").addClass("hidden");
+            $("#galeria4").removeClass("animated fadeIn");
+            $("#galeria5").removeClass("animated fadeOut"+direccion);
+            $("#galeria3").removeClass("animated fadeOut"+direccion);
+
+            $("#galeria4").removeClass('hidden');
+            $("#galeria4").addClass("animated fadeIn");
+            //video
+            document.getElementById('video1').play();
+        },400);
+
+            $("#flechaDer").removeAttr('onclick');
+            $("#flechaIzq").removeAttr('onclick');
+            $("#flechaDer").attr('onclick', "cambiaGaleria('5','right')");
+            $("#flechaIzq").attr('onclick', "cambiaGaleria('3','left')");
+    }
+    else if(num==='5'){
+
+        $("#galeria6").addClass("animated fadeOut"+direccion);
+        $("#galeria4").addClass("animated fadeOut"+direccion);
+        setTimeout(function(){
+            $("#galeria6").addClass("hidden");
+            $("#galeria4").addClass("hidden");
+            $("#galeria5").removeClass("animated fadeIn");
+            $("#galeria6").removeClass("animated fadeOut"+direccion);
+            $("#galeria4").removeClass("animated fadeOut"+direccion);
+
+            $("#galeria5").removeClass('hidden');
+            $("#galeria5").addClass("animated fadeIn");
+            //video
+            document.getElementById('video1').pause();
+            document.getElementById('video1').currentTime = 0;
+        },400);
+
+            $("#flechaDer").removeAttr('onclick');
+            $("#flechaIzq").removeAttr('onclick');
+            $("#flechaDer").attr('onclick', "cambiaGaleria('6','right')");
+            $("#flechaIzq").attr('onclick', "cambiaGaleria('4','left')");
+    }
+    else if(num==='6'){
+
+        $("#galeria7").addClass("animated fadeOut"+direccion);
+        $("#galeria5").addClass("animated fadeOut"+direccion);
+        setTimeout(function(){
+            $("#galeria7").addClass("hidden");
+            $("#galeria5").addClass("hidden");
+            $("#galeria6").removeClass("animated fadeIn");
+            $("#galeria7").removeClass("animated fadeOut"+direccion);
+            $("#galeria5").removeClass("animated fadeOut"+direccion);
+
+            $("#galeria6").removeClass('hidden');
+            $("#galeria6").addClass("animated fadeIn");
+        },400);
+
+         $("#flechaDer").removeAttr('onclick');
+            $("#flechaIzq").removeAttr('onclick');
+            $("#flechaDer").attr('onclick', "cambiaGaleria('7','right')");
+            $("#flechaIzq").attr('onclick', "cambiaGaleria('5','left')");
+    }
+    else if(num==='7'){
+
+        $("#galeria8").addClass("animated fadeOut"+direccion);
+        $("#galeria6").addClass("animated fadeOut"+direccion);
+        setTimeout(function(){
+            $("#galeria8").addClass("hidden");
+            $("#galeria6").addClass("hidden");
+            $("#galeria7").removeClass("animated fadeIn");
+            $("#galeria8").removeClass("animated fadeOut"+direccion);
+            $("#galeria6").removeClass("animated fadeOut"+direccion);
+
+            $("#galeria7").removeClass('hidden');
+            $("#galeria7").addClass("animated fadeIn");
+            //video
+            document.getElementById('video2').pause();
+            document.getElementById('video2').currentTime = 0;
+        },400);
+         $("#flechaDer").removeAttr('onclick');
+            $("#flechaIzq").removeAttr('onclick');
+            $("#flechaDer").attr('onclick', "cambiaGaleria('8','right')");
+            $("#flechaIzq").attr('onclick', "cambiaGaleria('6','left')");
+    }
+    else if(num==='8'){
+
+        $("#galeria9").addClass("animated fadeOut"+direccion);
+        $("#galeria7").addClass("animated fadeOut"+direccion);
+        setTimeout(function(){
+            $("#galeria9").addClass("hidden");
+            $("#galeria7").addClass("hidden");
+            $("#galeria8").removeClass("animated fadeIn");
+            $("#galeria9").removeClass("animated fadeOut"+direccion);
+            $("#galeria7").removeClass("animated fadeOut"+direccion);
+
+            $("#galeria8").removeClass('hidden');
+            $("#galeria8").addClass("animated fadeIn");
+                        //video
+            document.getElementById('video2').play();
+
+        },400);
+         $("#flechaDer").removeAttr('onclick');
+            $("#flechaIzq").removeAttr('onclick');
+            $("#flechaDer").attr('onclick', "cambiaGaleria('9','right')");
+            $("#flechaIzq").attr('onclick', "cambiaGaleria('7','left')");
+    }
+    else if(num==='9'){
+
+        $("#galeria10").addClass("animated fadeOut"+direccion);
+        $("#galeria8").addClass("animated fadeOut"+direccion);
+        setTimeout(function(){
+            $("#galeria10").addClass("hidden");
+            $("#galeria8").addClass("hidden");
+            $("#galeria9").removeClass("animated fadeIn");
+            $("#galeria10").removeClass("animated fadeOut"+direccion);
+            $("#galeria8").removeClass("animated fadeOut"+direccion);
+
+            $("#galeria9").removeClass('hidden');
+            $("#galeria9").addClass("animated fadeIn");
+            //video
+            document.getElementById('video2').pause();
+            document.getElementById('video2').currentTime = 0;
+        },400);
+
+         $("#flechaDer").removeAttr('onclick');
+            $("#flechaIzq").removeAttr('onclick');
+            $("#flechaDer").attr('onclick', "cambiaGaleria('10','right')");
+            $("#flechaIzq").attr('onclick', "cambiaGaleria('8','left')");
+    }
+    else if(num==='10'){
+
+        $("#galeria11").addClass("animated fadeOut"+direccion);
+        $("#galeria9z").addClass("animated fadeOut"+direccion);
+        setTimeout(function(){
+            $("#galeria11").addClass("hidden");
+            $("#galeria9").addClass("hidden");
+            $("#galeria10").removeClass("animated fadeIn");
+            $("#galeria11").removeClass("animated fadeOut"+direccion);
+            $("#galeria9").removeClass("animated fadeOut"+direccion);
+
+            $("#galeria10").removeClass('hidden');
+            $("#galeria10").addClass("animated fadeIn");
+            //video
+            document.getElementById('video3').pause();
+            document.getElementById('video3').currentTime = 0;
+        },400);
+
+         $("#flechaDer").removeAttr('onclick');
+            $("#flechaIzq").removeAttr('onclick');
+            $("#flechaDer").attr('onclick', "cambiaGaleria('11','right')");
+            $("#flechaIzq").attr('onclick', "cambiaGaleria('9','left')");
+    }
+    else if(num==='11'){
+
+        $("#galeria1").addClass("animated fadeOut"+direccion);
+        $("#galeria10").addClass("animated fadeOut"+direccion);
+        setTimeout(function(){
+            $("#galeria1").addClass("hidden");
+            $("#galeria10").addClass("hidden");
+            $("#galeria11").removeClass("animated fadeIn");
+            $("#galeria1").removeClass("animated fadeOut"+direccion);
+            $("#galeria10").removeClass("animated fadeOut"+direccion);
+
+            $("#galeria11").removeClass('hidden');
+            $("#galeria11").addClass("animated fadeIn");
+                        //video
+            document.getElementById('video3').play();
+
+        },400);
+
+         $("#flechaDer").removeAttr('onclick');
+            $("#flechaIzq").removeAttr('onclick');
+            $("#flechaDer").attr('onclick', "cambiaGaleria('1','right')");
+            $("#flechaIzq").attr('onclick', "cambiaGaleria('10','left')");
+    }
 }
