@@ -19,12 +19,12 @@
                         <img width="80px" src="images/logoRieleros.png" onclick="animate('tada','logoRieleros')" id="logoRieleros">
                     </center>
                 </div>
-                
+
                 <div class="col-md-4 col-md-offset-3">
                     <center>
                      <!-- <img width="150px" src="images/rieleros.png"  onclick="animate('swing','logoRieleros1')" id="logoRieleros1">-->
                         <br>
-                        <span class="titulo" style="margin-left: 0px;">C A L E N D A R I O</span>                       
+                        <span class="titulo" style="margin-left: 0px;">C A L E N D A R I O</span>
                     </center>
                 </div>
 
@@ -45,8 +45,12 @@
     <!--Cuerpo  style="margin: 0 auto -330px;"-->
     <div id="principal" >
 		<div  id="calendario1">
-	    	<div class="row container-fluid">
-   		 		<div class="col-md-10 col-md-offset-1">
+			<div class="container">
+	    	<div class="row">
+					<div class="col-md-1">
+							<span class="glyphicon glyphicon-menu-left flechaIzqHistoria" onclick="cambiaCalendario('3','Left')" style="margin-top:300px;"></span>
+					</div>
+   		 		<div class="col-md-10">
 					<table class="table table-bordered">
 						<thead>
 							<tr>
@@ -88,47 +92,219 @@
 								<td>18</td>
 								<td>19</td>
 								<td>20</td>
-								<td class="diaPartido">21 <br> <center><img src="images/equipos/pericos.png" width="70px" height="70px" alt="Pericos"></center></</td>
+								<td class="diaPartido">21 <br> <center><img src="images/equipos/pericos.png" width="70px" height="70px" alt="Pericos"></center></td>
 							</tr>
 							<tr>
 								<td>22</td>
 								<td>23</td>
-								<td>24 <br> <center><img src="images/equipos/sultanes.png" width="70px" height="70px" alt="Sultanes"></center></</td>
+								<td class="diaPartido">24 <br> <center><img src="images/equipos/sultanes.png" width="70px" height="70px" alt="Sultanes"></center></td>
 								<td>25</td>
 								<td>26</td>
 								<td>27</td>
-								<td>28</td>		
+								<td>28</td>
 							</tr>
 							<tr>
-								<td class="diaPartido">29 <br> <center><img src="images/equipos/saraperos.png" width="70px" height="70px" alt="Saraperos"></center></</td>
+								<td class="diaPartido">29 <br> <center><img src="images/equipos/saraperos.png" width="70px" height="70px" alt="Saraperos"></center></td>
 								<td>30</td>
 								<td>31</td>
 								<td class="diaNo">1</td>
 								<td class="diaNo">2</td>
 								<td class="diaNo">3</td>
-								<td class="diaNo">4</td>		
+								<td class="diaNo">4</td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
-    		</div>
-    	</div>
+				<div class="col-md-1">
+						<span class="glyphicon glyphicon-menu-right flechaDerHistoria" onclick="cambiaCalendario('2','Right')" style="margin-top:300px;"></span>
+				</div>
+					</div>
+			</div>
+		</div>
 
-    	
+		<div  id="calendario2" class="hidden">
+			<div class="container">
+	    	<div class="row">
+					<div class="col-md-1">
+							<span class="glyphicon glyphicon-menu-left flechaIzqHistoria" onclick="cambiaCalendario('1','Left')" style="margin-top:300px;"></span>
+					</div>
+   		 		<div class="col-md-10">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th class="mesCalendario" colspan="7">Junio</th>
+							</tr>
+							<tr class="diaSemana">
+								<th>Domingo</th>
+								<th>Lunes</th>
+								<th>Martes</th>
+								<th>Miércoles</th>
+								<th>Jueves</th>
+								<th>Viernes</th>
+								<th>Sábado</th>
+							</tr>
+						</thead>
+						<tbody class="diasCalendario">
+							<tr>
+								<td class="diaNo">29</td>
+								<td class="diaNo">30</td>
+								<td class="diaNo">31</td>
+								<td>1</td>
+								<td class="diaPartido">2 <br> <center><img src="images/equipos/piratas.png" width="70px" height="70px" alt="Piratas"></center></td>
+								<td>3</td>
+								<td>4</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>6</td>
+								<td class="diaPartido">7 <br> <center><img src="images/equipos/vaqueros.png" width="70px" height="70px" alt="Vaqueros"></center></td>
+								<td>8</td>
+								<td>9</td>
+								<td>10</td>
+								<td>11</td>
+							</tr>
+							<tr>
+								<td>12</td>
+								<td>13</td>
+								<td>14</td>
+								<td>15</td>
+								<td>16</td>
+								<td>27</td>
+								<td class="diaPartido">18 <br> <center><img src="images/equipos/olmecas.png" width="70px" height="70px" alt="Olmecas"></center></td>
+							</tr>
+							<tr>
+								<td>19</td>
+								<td>20</td>
+								<td class="diaPartido">21 <br> <center><img src="images/equipos/monclova.png" width="70px" height="70px" alt="Monclova"></center></td>
+								<td>22</td>
+								<td>23</td>
+								<td>24</td>
+								<td>25</td>
+							</tr>
+							<tr>
+								<td class="diaPartido">26 <br> <center><img src="images/equipos/broncos.png" width="70px" height="70px" alt="Broncos"></center></td>
+								<td>27</td>
+								<td>28</td>
+								<td>29</td>
+								<td>30</td>
+								<td class="diaNo">1</td>
+								<td class="diaNo">2</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-1">
+						<span class="glyphicon glyphicon-menu-right flechaDerHistoria" onclick="cambiaCalendario('3','Right')" style="margin-top:300px;"></span>
+				</div>
+					</div>
+			</div>
+		</div>
+
+		<div  id="calendario3" class="hidden">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-1">
+							<span class="glyphicon glyphicon-menu-left flechaIzqHistoria" onclick="cambiaCalendario('2','Left')" style="margin-top:300px;"></span>
+					</div>
+					<div class="col-md-10">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th class="mesCalendario" colspan="7">Julio</th>
+							</tr>
+							<tr class="diaSemana">
+								<th>Domingo</th>
+								<th>Lunes</th>
+								<th>Martes</th>
+								<th>Miércoles</th>
+								<th>Jueves</th>
+								<th>Viernes</th>
+								<th>Sábado</th>
+							</tr>
+						</thead>
+						<tbody class="diasCalendario">
+							<tr>
+								<td class="diaNo">26</td>
+								<td class="diaNo">27</td>
+								<td class="diaNo">28</td>
+								<td>29</td>
+								<td>30</td>
+								<td class="diaPartido">1 <br> <center><img src="images/equipos/delfines.png" width="70px" height="70px" alt="Delfines"></center></td>
+								<td>2</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>4</td>
+								<td class="diaPartido">5 <br> <center><img src="images/equipos/Diablos.png" width="70px" height="70px" alt="Diablos"></center></td>
+								<td>6</td>
+								<td>7</td>
+								<td>8</td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>11</td>
+								<td>12</td>
+								<td>13</td>
+								<td>14</td>
+								<td>15</td>
+								<td class="diaPartido">16 <br> <center><img src="images/equipos/leones.png" width="70px" height="70px" alt="Leones"></center></td>
+							</tr>
+							<tr>
+								<td>17</td>
+								<td>18</td>
+								<td class="diaPartido">19 <br> <center><img src="images/equipos/sultanes.png" width="70px" height="70px" alt="Sultanes"></center></td>
+								<td>20</td>
+								<td>21</td>
+								<td>22</td>
+								<td>23</td>
+							</tr>
+							<tr>
+								<td class="diaPartido">24 <br> <center><img src="images/equipos/saraperos.png" width="70px" height="70px" alt="Saraperos"></center></td>
+								<td>25</td>
+								<td>26</td>
+								<td>27</td>
+								<td>28</td>
+								<td>29</td>
+								<td>30</td>
+							</tr>
+							<tr>
+								<td>31</td>
+								<td class="diaNo">1</td>
+								<td class="diaNo">2</td>
+								<td class="diaNo">3</td>
+								<td class="diaNo">4</td>
+								<td class="diaNo">5</td>
+								<td class="diaNo">6</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="col-md-1">
+						<span class="glyphicon glyphicon-menu-right flechaDerHistoria" onclick="cambiaCalendario('1','Right')" style="margin-top:300px;"></span>
+				</div>
+					</div>
+			</div>
+		</div>
+
+		<div class="row" id="div-btn-regresar">
+						<div class="col-md-4 col-md-offset-4">
+            <center><button class="btn-regresar "  onclick="window.location.href='index.html'"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></button>
+						</center>
+					</div>
     </div>
-      
-    <div id="div-btn-regresar">
-            <button class="btn-regresar "  onclick="window.location.href='index.html'"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></button>
+
     </div>
-   
+
+
 
 
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/rieleros.js"></script>
-    <script>
+  <!--  <script>
         acomodaBotonRegresar();
-    </script>
+    </script> -->
 </body>
 </html>
