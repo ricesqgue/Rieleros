@@ -1,5 +1,5 @@
 
-//Funcion que anima elemento, recibe el nombre de la animacion y el id del elemento.        
+//Funcion que anima elemento, recibe el nombre de la animacion y el id del elemento.
 function animate(animacion,elemento){
 	$("#"+elemento).addClass("animated " + animacion);
     setTimeout(function(){ $("#"+elemento).removeClass("animated " + animacion);  }, 1500);
@@ -12,10 +12,10 @@ function rotarImg(num){
     var infoJugador = $("#jugador"+num+"-info");
     fotoJugador.addClass("animated flipOutY");
     setTimeout(
-        function(){ 
-            fotoJugador.removeClass("animated flipOutY"); 
-            fotoJugador.addClass("hidden"); 
-            infoJugador.removeClass("hidden"); 
+        function(){
+            fotoJugador.removeClass("animated flipOutY");
+            fotoJugador.addClass("hidden");
+            infoJugador.removeClass("hidden");
             infoJugador.addClass("animated flipInY")
         }, 600);
     setTimeout(function(){infoJugador.removeClass("animated flipInY")},500);
@@ -36,10 +36,10 @@ function rotarInfo(num){
     var infoJugador = $("#jugador"+num+"-info");
     infoJugador.addClass("animated flipOutY");
     setTimeout(
-        function(){ 
-            infoJugador.removeClass("animated flipOutY"); 
-            infoJugador.addClass("hidden"); 
-            fotoJugador.removeClass("hidden"); 
+        function(){
+            infoJugador.removeClass("animated flipOutY");
+            infoJugador.addClass("hidden");
+            fotoJugador.removeClass("hidden");
             fotoJugador.addClass("animated flipInY")
         }, 600);
     setTimeout(function(){fotoJugador.removeClass("animated flipInY")},500);
@@ -76,7 +76,7 @@ function cambiaRoster(num,direccion){
             $("#roster1").removeClass("animated fadeOut"+direccion);
             $("#roster3").removeClass("animated fadeOut"+direccion);
             $("#roster2").removeClass('hidden');
-            $("#roster2").addClass("animated fadeIn");                    
+            $("#roster2").addClass("animated fadeIn");
         },400);
     }
     else if(num==='3'){
@@ -142,12 +142,58 @@ function cambiaLinea(num,direccion){
     }
 }
 
+function cambiaCalendario(num,direccion){
+    if(num==='1'){
+        $("#calendario2").addClass("animated fadeOut"+direccion);
+        $("#calendario3").addClass("animated fadeOut"+direccion);
+        setTimeout(function(){
+            $("#calendario2").addClass("hidden");
+            $("#calendario3").addClass("hidden");
+            $("#calendario1").removeClass("animated fadeIn");
+            $("#calendario2").removeClass("animated fadeOut"+direccion);
+            $("#calendario3").removeClass("animated fadeOut"+direccion);
+            $("#calendario1").removeClass('hidden');
+            $("#calendario1").addClass("animated fadeIn");
+        },400);
+
+    }
+    else if(num==='2'){
+
+        $("#calendario1").addClass("animated fadeOut"+direccion);
+        $("#calendario3").addClass("animated fadeOut"+direccion);
+        setTimeout(function(){
+            $("#calendario1").addClass("hidden");
+            $("#calendario3").addClass("hidden");
+            $("#calendario2").removeClass("animated fadeIn");
+            $("#calendario1").removeClass("animated fadeOut"+direccion);
+            $("#calendario3").removeClass("animated fadeOut"+direccion);
+            $("#calendario2").removeClass('hidden');
+            $("#calendario2").addClass("animated fadeIn");
+        },400);
+    }
+    else if(num==='3'){
+
+        $("#calendario1").addClass("animated fadeOut"+direccion);
+        $("#calendario2").addClass("animated fadeOut"+direccion);
+        setTimeout(function(){
+            $("#calendario1").addClass("hidden");
+            $("#calendario2").addClass("hidden");
+            $("#calendario3").removeClass("animated fadeIn");
+            $("#calendario1").removeClass("animated fadeOut"+direccion);
+            $("#calendario2").removeClass("animated fadeOut"+direccion);
+
+            $("#calendario3").removeClass('hidden');
+            $("#calendario3").addClass("animated fadeIn");
+        },400);
+    }
+}
+
 function acomodaBotonRegresar(){
     var ancho = screen.width/2;
     $("#div-btn-regresar").css("position" , "absolute");
     $("#div-btn-regresar").css("bottom" , "10px");
     $("#div-btn-regresar").css("left" , ancho-40+"px");
-     
+
 }
 
 function cambiaGaleria(num,direccion){
