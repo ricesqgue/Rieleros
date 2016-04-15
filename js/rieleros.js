@@ -443,3 +443,58 @@ function cambiaGaleria(num,direccion){
             $("#flechaIzq").attr('onclick', "cambiaGaleria('10','left')");
     }
 }
+
+function restaBoleto(){
+    var cantidad = parseInt($("#cantidad").html());;
+    if(cantidad !== "1"){
+        cantidad--;
+    }
+    $("#cantidad").html(cantidad);
+    var precio = parseInt($("#precio").html());
+    $("#total").html(precio*cantidad);
+}
+
+function sumaBoleto(){
+    var cantidad = parseInt($("#cantidad").html());
+    var disponibles = parseInt($("#boletosDisponibles").html());
+
+   // alert(disponibles);
+    if(cantidad<disponibles){
+        cantidad++;
+        $("#cantidad").html(cantidad);
+       var precio = parseInt($("#precio").html());;
+        $("#total").html(precio*cantidad);
+    }
+     //   alert(cantidad);
+}
+
+function seleccionSeccion(idPartido,idSeccion,color){
+    $.post("infoBoletos.php",{idSeccion: idSeccion, idPartido:idPartido},function(res){
+        $("#seccion").html(res.nombre);
+        $("#precio").html(res.precio);
+        $("#boletosDisponibles").html(res.disponibles);
+        $(".btn-boleto").removeAttr('disabled');
+        $(".btn-mediano").removeAttr('disabled');
+        $("#total").html(res.precio);
+        $(".panel-heading").css({
+            'background-color': color
+        });
+    },"json");
+}
+
+function checaDisponibilidad(idPartido){
+    $.post("checaDisponibilidad.php",{idPartido: idPartido},function(res){
+        var colorx = 'FF0000';
+        var data = {};
+        data.alwaysOn = !data.alwaysOn;
+        data.stroke = 'none';
+        data.strokeWidth = 0.0000001;
+        data.strokeColor = colorx;
+        data.fillColor = colorx; // Sample color
+        data.fillOpacity = 1;
+        for(var i=0;i<res.length;i++){
+            $("area[title='"+res[i].nombre+"']").data('maphilight', data).trigger('alwaysOn.maphilight'); 
+        }
+
+    },"json");
+}

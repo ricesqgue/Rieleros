@@ -4,6 +4,7 @@
 	font-size: 18pt;
 	background-image: linear-gradient(to bottom, #ffdd1c, #F39C12);
 	color: #0B2161;
+	text-align: center;
 }
 .btn-grande:hover{
 	color:#0B2161;
@@ -155,14 +156,75 @@ table > .diasCalendario > tr > .diaPartido {
 
 .textoImagen{
 	position: absolute;
-	top:400px;
+	top:435px;
 	left: 236px;
 	width: 472px;
 	height: 70px;
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(0, 0, 0, 0.5);
 
 }
 
 .galeria{
 	position: relative;
+}
+
+.estadisticas > thead > tr > th{
+	text-align: center;
+	font-size: 18pt;
+	width: 65px;
+	height: 60px;
+}
+
+.estadisticas > tbody > tr > td{
+	text-align: center;
+	font-size: 17pt;
+	width: 65px;
+	height: 80px;
+}
+
+.fechaPartido{
+	font-size: 18pt;
+}
+
+
+.vs{
+	margin-left: 100px;
+	margin-right: 100px;
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+.infoCompraBoleto{
+	margin-top: 0px;
+	height: 672px;
+}
+
+.btn-boleto{
+	background-image: linear-gradient(to bottom, #ffdd1c, #F39C12);
+	color: #0B2161;
+	text-align: center;
+	margin-right: 10px;
+	margin-left: 10px;
+	border-radius: 5px;
+}
+
+.btn-mediano{
+	width: 150px;
+	height: 80px;
+	font-size: 18pt;
+	background-image: linear-gradient(to bottom, #ffdd1c, #F39C12);
+	color: #0B2161;
+	text-align: center;
+}
+
+.btn-grande:hover{
+	color:#0B2161;
+}
+
+.btn-grande:visited{
+	color:#0B2161;
+}
+
+.btn-grande:focus {
+	color:#0B2161;
 }
