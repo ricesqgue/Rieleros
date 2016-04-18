@@ -1,4 +1,4 @@
-<?php 
+<?php
 	$servername = "localhost";
 	$username = "root";
 	$password = "root";
@@ -16,7 +16,7 @@
 
 
 	$vendidos = 0;
-	$query = "select if(sum(cantidad) is not null,sum(cantidad),0) as vendidos from ventaBoletos where idPartido = " . $idPartido . " and idSeccion = ". $idSeccion .";";
+	$query = "select if(sum(cantidad) is not null,sum(cantidad),0) as vendidos from ventaboletos where idPartido = " . $idPartido . " and idSeccion = ". $idSeccion .";";
 	$consulta = $conn->query($query);
 
 	if($consulta->num_rows > 0){

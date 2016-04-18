@@ -1,4 +1,4 @@
-<?php 
+<?php
 	$servername = "localhost";
 	$username = "root";
 	$password = "root";
@@ -9,12 +9,13 @@
     	die("Connection failed: " . $conn->connect_error);
 	}
 	$idPartido = $_POST['idPartido'];
-	
+
 	$salida = array();
-	$query = "select s.idSeccion as idSeleccion, s.nombre as nombre ,s.capacidad - if(sum(v.cantidad) is not null,sum(v.cantidad),0) as disponibles from ventaBoletos v natural join seccion s where v.idPartido = " . $idPartido." group by idSeccion;"; 
+	$query = "select s.idSeccion as idSeleccion, s.nombre as nombre ,s.capacidad - if(sum(v.cantidad) is not null,sum(v.cantidad),0) as disponibles from ventaboletos v natural join seccion s where v.idPartido = " . $idPartido." group by idSeccion;";
 	$consulta = $conn->query("$query");
 
 	while($row = $consulta->fetch_assoc()){
+		if($row['disponibles']=='0')
 		array_push($salida, array('nombre'=> $row['nombre']));
 	}
 	echo json_encode($salida);

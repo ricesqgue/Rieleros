@@ -21,7 +21,7 @@ function rotarImg(num){
     setTimeout(function(){infoJugador.removeClass("animated flipInY")},500);
     for(var i=1;i<25;i++){
         document.getElementById("soundPlayer"+i).pause();
-        document.getElementById("soundPlayer"+i).currentTime = 0; 
+        document.getElementById("soundPlayer"+i).currentTime = 0;
     }
 
     document.getElementById("soundPlayer"+num).play();
@@ -232,7 +232,7 @@ function cambiaGaleria(num,direccion){
             $("#galeria3").removeClass("animated fadeOut"+direccion);
             $("#galeria2").removeClass('hidden');
             $("#galeria2").addClass("animated fadeIn");
-            
+
         },400);
 
             $("#flechaDer").removeAttr('onclick');
@@ -493,8 +493,15 @@ function checaDisponibilidad(idPartido){
         data.fillColor = colorx; // Sample color
         data.fillOpacity = 1;
         for(var i=0;i<res.length;i++){
-            $("area[title='"+res[i].nombre+"']").data('maphilight', data).trigger('alwaysOn.maphilight'); 
+            $("area[title='"+res[i].nombre+"']").data('maphilight', data).trigger('alwaysOn.maphilight');
         }
 
     },"json");
+}
+
+function registraBoletos(idPartido){
+	var seccion=$("#seccion").html();
+	var cantidad=$("#cantidad").html();
+	var total=$("#total").html();
+	window.location.href="registraVenta.php?idPartido="+idPartido+"&cantidad="+cantidad+"&total="+total+"&seccion="+seccion;
 }
