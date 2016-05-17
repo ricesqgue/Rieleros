@@ -26,6 +26,7 @@
   $cantidad = $_GET['cantidad'];
   $seccion = $_GET['seccion'];
   $total = $_GET['total'];
+  $fecha = $_GET["fecha"];
   $visitante;
   $idSeccion;
   $imagen;
@@ -53,38 +54,57 @@
   ?>
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <div class='panel panel-default tickets'>
-            <div class="panel-heading">
-              <center>  <img width="80px" src="images/logoRieleros.png" onclick="animate('tada','logoRieleros')" id="logoRieleros"> VS
-                <img width="80px" src="images/equipos/<?php echo $imagen; ?>"> </center>
-            </div>
-            <div class="panel-body">
-                <h3>Partido: <span><?php echo $visitante; ?> VS Rieleros</span></h3>
-                <br>
-                <h3>Lugar: <span>Parque Alberto Romo Chávez</span></h3>
-                <br>
-                <h3>Hora: <span>6 P.M.</span></h3>
-                <br>
-                <h3>Sección: <span><?php echo $seccion; ?></span></h3>
-                <br>
-                <h3>Cantidad: <span><?php echo $cantidad; ?></span></h3>
-                <br>
-                <h3>Total: $<span><?php echo $total; ?></span></h3>
+      <center>
+          <div class="col-md-12">
+              <div class="boleto">
                 <br>
                 <br>
                 <br>
                 <br>
-            </div>
-
+                <br>
+                <br>
+                <br> 
+                <br>
+                <br>         
+                <img width="80px" class='infoBoleto' src="images/logoRieleros.png" onclick="animate('tada','logoRieleros')" id="logoRieleros"> VS
+                <img width="80px" class='infoBoleto' src="images/equipos/<?php echo $imagen; ?>">
+                <br>
+                <br>  
+                <span class='infoBoleto'>Parque Alberto Romo Chávez</span>
+                <br><br>
+                <span class='infoBoleto'><?php  echo $visitante ?> VS Rieleros</span>
+                <br><br>
+                <span class='infoBoleto'>Seccion: <?php  echo $seccion ?></span>
+                <br><br>
+                <span class='infoBoleto'><?php   echo $cantidad ?> boleto(s)</span>
+                <br><br>
+                <span class='infoBoleto'>$ <?php echo $total  ?></span>
+                <br><br>  
+                <span class='infoBoleto'><?php  echo $fecha ?> 6:00 PM</span>
+              </div>
+          </div>
+      </center> 
+    </div>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 div col-md-offset-4">
+        <div class="progress" style="height: 30px;">
+          <div class="progress-bar progress-bar-striped progress-bar-warning active" role="progressbar"  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+            <span style="font-size: 18pt; text-align: center"><br>Imprimiendo boletos</span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+</div> 
 
   <script src="js/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/rieleros.js"></script>
+  <script>
+    setTimeout(function(){window.location.href='index.html'},7000);
+  </script>
 
 </body>
 </html>

@@ -79,7 +79,7 @@ html, body {
 	height: 100%;
 }
 #principal {
-	min-height: 80%
+	min-height: 80%;
 	margin: 0 auto -80px; /*the bottom margin is the negative value of the footer's height*/
 }
 
@@ -228,6 +228,17 @@ table > .diasCalendario > tr > .diaPartido {
 .btn-grande:focus {
 	color:#0B2161;
 }
-.tickets{
 
+.boleto{
+	font-weight: 900;
+	color: black;
+	width: 400px;
+	height: 700px;
+	background-image: url(../images/boleto.png);
+	text-align: left;
+}
+
+.infoBoleto{
+	margin-left: 35px;
+	font-size: 13pt;
 }

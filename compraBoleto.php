@@ -86,7 +86,7 @@
                             <br>
                             <h3>Boletos disponibles: <span id="boletosDisponibles">0</span></h3>
                             <br>
-                            <h3>Cantidad: <button disabled class='btn-boleto' onclick="restaBoleto()"><span class="glyphicon glyphicon-minus"></span></button><span id="cantidad">1</span><button disabled class='btn-boleto' onclick="sumaBoleto()"><span class="glyphicon glyphicon-plus"></span></button></h3>
+                            <h3>Cantidad: <button disabled="disabled" class='btn-boleto' onclick="restaBoleto()"><span class="glyphicon glyphicon-minus"></span></button><span id="cantidad">1</span><button disabled="disabled" class='btn-boleto' onclick="sumaBoleto()"><span class="glyphicon glyphicon-plus"></span></button></h3>
                             <br>
                             <h3>Total: $<span id="total">0</span></h3>
                             <br>
@@ -94,7 +94,7 @@
                             <br>
                             <br>
                             <button class="btn btn-mediano" style="margin-left: 60px;" onclick="window.history.back(-1)">Regresar</button>
-                            <button class="btn btn-mediano" disabled style="margin-left: 100px;" onclick="registraBoletos('<?php echo $idPartido; ?>')">Comprar</button>
+                            <button class="btn btn-mediano" disabled="disabled" id="btn-compra" style="margin-left: 100px;" onclick="ventaBoletos('<?php echo $idPartido; ?>','<?php echo $_GET['fecha'] ?>')">Comprar</button>
 
                         </div>
 

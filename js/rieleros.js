@@ -446,7 +446,7 @@ function cambiaGaleria(num,direccion){
 
 function restaBoleto(){
     var cantidad = parseInt($("#cantidad").html());;
-    if(cantidad !== "1"){
+    if(cantidad !== 1){
         cantidad--;
     }
     $("#cantidad").html(cantidad);
@@ -473,12 +473,28 @@ function seleccionSeccion(idPartido,idSeccion,color){
         $("#seccion").html(res.nombre);
         $("#precio").html(res.precio);
         $("#boletosDisponibles").html(res.disponibles);
-        $(".btn-boleto").removeAttr('disabled');
-        $(".btn-mediano").removeAttr('disabled');
+
+        if($("#boletosDisponibles").html() === "0"){
+
+            $(".panel-body").attr('style', 'background-image: url(images/agotado.png);');
+
+            $(".panel-body").css({
+                'background-repeat': 'no-repeat'
+            });
+
+            $(".btn-boleto").attr('disabled', 'disabled');
+            $("#btn-compra").attr('disabled', 'disabled');
+        }
+        else{
+            $(".panel-body").removeAttr('style');
+           $(".btn-boleto").removeAttr('disabled');
+           $("#btn-compra").removeAttr('disabled'); 
+        }
         $("#total").html(res.precio);
         $(".panel-heading").css({
             'background-color': color
         });
+        $("#cantidad").html("1");
     },"json");
 }
 
@@ -499,9 +515,31 @@ function checaDisponibilidad(idPartido){
     },"json");
 }
 
-function registraBoletos(idPartido){
+function ventaBoletos(idPartido, fecha){
 	var seccion=$("#seccion").html();
 	var cantidad=$("#cantidad").html();
 	var total=$("#total").html();
-	window.location.href="registraVenta.php?idPartido="+idPartido+"&cantidad="+cantidad+"&total="+total+"&seccion="+seccion;
+	window.location.href="cobrar.php?idPartido="+idPartido+"&cantidad="+cantidad+"&total="+total+"&seccion="+seccion+"&fecha="+fecha;
+}
+
+function insertoTarjeta(idPartido, fecha,cantidad,seccion,total){
+    $("#btn-cancelar").attr('disabled', 'disabled');
+    var barra = '<div class="progress" style="height: 30px;">'+
+            '<div class="progress-bar progress-bar-striped progress-bar-warning active" role="progressbar"  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">'+
+          '</div>'+
+        '</div>';
+    $("#instruccionPago").html("<h3 id='textoTarjeta'>Procesando tarjeta...</h3><br>"+barra);
+    setTimeout(function(){ 
+        $('#textoTarjeta').html('Validando...');
+        setTimeout(function(){ 
+            $('#textoTarjeta').html('Realizando pago...'); 
+            setTimeout(function(){ 
+                $('#instruccionPago').html('<h3>Pago realizado con éxito. <img src=\"images/success.png\" width=\"30px\"><br><br /> Retire su tarjeta.</h3>');
+                setTimeout(function(){ 
+                    window.location.href="registraVenta.php?idPartido="+idPartido+"&cantidad="+cantidad+"&total="+total+"&seccion="+seccion+"&fecha="+fecha;
+                    }, 3000);    
+            }, 3000);
+        }, 3000);
+    }, 2000);
+
 }

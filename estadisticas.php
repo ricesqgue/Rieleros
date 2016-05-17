@@ -109,7 +109,7 @@
                 </div>
                 <div class="col-md-3 col-md-offset-1">
                     <?php 
-                        $ruta = "compraBoleto.php?idPartido=".$_GET['idPartido'];
+                        $ruta = "compraBoleto.php?idPartido=".$_GET['idPartido'] . "&fecha=" . $_GET['fecha'];
                     ?>
                     <button class="btn btn-grande" onclick="window.location.href='<?php echo $ruta?>'">Comprar Boletos</button>
                 </div>
