@@ -242,3 +242,17 @@ table > .diasCalendario > tr > .diaPartido {
 	margin-left: 35px;
 	font-size: 13pt;
 }
+
+.posiciones > thead > tr {
+	background-color: #707070;
+}
+
+.posiciones > thead> tr > th{
+	text-align: center;
+	font-size: 14pt;
+}
+
+.posiciones > tbody > tr > td {
+	text-align: center;
+}
+
