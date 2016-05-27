@@ -529,11 +529,13 @@ function insertoTarjeta(idPartido, fecha,cantidad,seccion,total){
           '</div>'+
         '</div>';
     $("#instruccionPago").html("<h3 id='textoTarjeta'>Procesando tarjeta...</h3><br>"+barra);
+    document.getElementById("procesando").play();
     setTimeout(function(){ 
         $('#textoTarjeta').html('Validando...');
         setTimeout(function(){ 
             $('#textoTarjeta').html('Realizando pago...'); 
             setTimeout(function(){ 
+                document.getElementById("exito").play();
                 $('#instruccionPago').html('<h3>Pago realizado con éxito. <img src=\"images/success.png\" width=\"30px\"><br><br /> Retire su tarjeta.</h3>');
                 setTimeout(function(){ 
                     window.location.href="registraVenta.php?idPartido="+idPartido+"&cantidad="+cantidad+"&total="+total+"&seccion="+seccion+"&fecha="+fecha;
@@ -542,4 +544,55 @@ function insertoTarjeta(idPartido, fecha,cantidad,seccion,total){
         }, 3000);
     }, 2000);
 
+}
+
+function pagoProducto(cantidad,total){
+    var meses = new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+    var f=new Date();
+    var fecha = f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear();
+
+    $("#btn-cancelar").attr('disabled', 'disabled');
+    var barra = '<div class="progress" style="height: 30px;">'+
+            '<div class="progress-bar progress-bar-striped progress-bar-warning active" role="progressbar"  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">'+
+          '</div>'+
+        '</div>';
+        document.getElementById("procesando").play();
+    $("#instruccionPago").html("<h3 id='textoTarjeta'>Procesando tarjeta...</h3><br>"+barra);
+    setTimeout(function(){ 
+
+        $('#textoTarjeta').html('Validando...');
+        
+        setTimeout(function(){ 
+            $('#textoTarjeta').html('Realizando pago...'); 
+            setTimeout(function(){ 
+                document.getElementById("exito").play();
+                $('#instruccionPago').html('<h3>Pago realizado con éxito. <img src=\"images/success.png\" width=\"30px\"><br><br /> Retire su tarjeta.</h3>');
+                setTimeout(function(){ 
+                    window.location.href="imprimeProducto.php?cantidad="+cantidad+"&total="+total+"&fecha="+fecha;
+                    }, 3000);    
+            }, 3000);
+        }, 3000);
+    }, 2000);
+}
+
+function restaCantidad(){
+    var cantidad = parseInt($("#cantidad").html());
+    if(cantidad !== 1){
+        cantidad--;
+    }
+    $("#cantidad").html(cantidad);
+    var precio = parseInt($("#precio").html());
+    $("#total").html(precio*cantidad);
+}
+
+function sumaCantidad(){
+    var cantidad = parseInt($("#cantidad").html());
+
+   // alert(disponibles);
+        cantidad++;
+        $("#cantidad").html(cantidad);
+       var precio = parseInt($("#precio").html());
+        $("#total").html(precio*cantidad);
+        
+     //   alert(cantidad);
 }

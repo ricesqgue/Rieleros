@@ -80,6 +80,7 @@
                     <div class='panel panel-default infoCompraBoleto'>
                         <div class="panel-heading">
                             <center><h1 id="seccion">Seleccione una sección</h1></center>
+                            <audio id="instruccion" src="sounds/instruccionSeccion.mp3"></audio>
                         </div>
                         <div class="panel-body">
                             <h3>Precio: $<span id="precio">0</span></h3>
@@ -110,6 +111,9 @@
     <script src="js/rieleros.js"></script>
     <script src="js/maphilight.js"></script>
     <script>
+    $( document ).ready(function() {
+            document.getElementById("instruccion").play();
+        });
         checaDisponibilidad('<?php echo $idPartido?>');
         $(".estadio").maphilight();
         $('.seccion').click(function(e) {

@@ -51,13 +51,13 @@
                             <center><h1 id="seccion">Detalle de compra</h1></center>
                         </div>
                         <div class="panel-body">
-                            <h3>Fecha del partido: <?php echo $_GET['fecha'] ?> </h3>
+                            <h3>Producto: <b>Gorra New Era</b> </h3>
                             <br>
-                            <h3>Cantidad de boletos:  <?php echo $_GET['cantidad'] ?> </h3>
+                            <h3>Cantidad:<b> <?php echo $_GET['cantidad'] ?></b> </h3>
                             <br>
-                            <h3>Sección:  <?php echo $_GET['seccion'] ?> </h3>
+                            <h3>Precio unitario:<b> $449</b> </h3>
                             <br>
-                            <h3>Total a pagar: $  <?php echo $_GET['total'] ?></h3>
+                            <h3>Total a pagar: <b>$  <?php echo $_GET['total'] ?></b></h3>
                             <br>
                             <br>
                             <br>
@@ -71,13 +71,13 @@
                 <div class="col-md-6">
                     <div class='panel panel-default infoCompraBoleto'>
                         <div class="panel-heading">
-                            <center><h1 id="seccion">Pagar boletos</h1></center>
+                            <center><h1 id="seccion">Pagar productos</h1></center>
                         </div>
                         <div class="panel-body"> 
                             <center>
                                 <div id="instruccionPago"><h2>Inserte su tarjeta de crédito/débito</h2></div>
                                 <br>
-                                <img src="images/tarjeta.png" alt="" width="280px" onclick="insertoTarjeta('<?php echo $_GET['idPartido']; ?>','<?php echo $_GET['fecha'] ?>','<?php echo $_GET['cantidad']?>','<?php echo $_GET['seccion'] ?>','<?php echo $_GET['total'] ?>');">
+                                <img src="images/tarjeta.png" alt="" width="280px" onclick="pagoProducto(<?php echo $_GET['cantidad'] ?>,<?php echo $_GET['total'] ?>)">
                                 <br><br>
                                 <img src="images/visa.png" alt="Visa" width="60px">                  
                                 <img src="images/masterCard.png" style="margin-left: 70px;" alt="Visa" width="70px"> 

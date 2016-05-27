@@ -45,6 +45,7 @@
     <div class="row">
         <div class="col-md-12 col-md-offset-2">
             <h4>Para más información seleccione un jugador.</h4>
+            <audio id="instruccion" src="sounds/instruccionRoster.mp3"></audio>
             <br>
         </div>
     </div>
@@ -860,7 +861,7 @@
 
 </div>
     <div id="div-btn-regresar">
-            <button class="btn-regresar "  onclick="window.location.href='index.html'"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></button>
+       <button class="btn-regresar "  onclick="window.location.href='index.html'"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></button>
     </div>
 
 
@@ -870,5 +871,8 @@
     <script src="js/rieleros.js"></script>
         <script>
         acomodaBotonRegresar();
+        $( document ).ready(function() {
+            document.getElementById("instruccion").play();
+        });
     </script>
 </html>

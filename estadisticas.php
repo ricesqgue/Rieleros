@@ -52,11 +52,11 @@
                    </center>   
                 </div>
             </div>
-            <br><br><br>
+            <br>
             <div class="row">
                 <div class="col-md-12">
                     <center>
-                        Encuentro anterior 12 de marzo de 2016
+                        <h4>Encuentro anterior 12 de marzo de 2016</h4>
                         <table class='estadisticas table-bordered'>
                             <thead>
                                 <tr>

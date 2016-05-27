@@ -37,17 +37,18 @@
         </div>
     </div>
 
-	<br>
-	<br>
-	<br>
 
 
     <!--Cuerpo  style="margin: 0 auto -330px;"-->
     <div id="principal" >
+    	<br>
+		<h4 style="margin-left:320px;">Seleccione el partido al cual quiere asistir.</h4>
+		<audio id="instruccion" src="sounds/instruccionCalendario.mp3"></audio>
+		
 		<div  id="calendario1">
 			<div class="container">
 	    	<div class="row">
-					<div class="col-md-1">
+				<div class="col-md-1">
 							<span class="glyphicon glyphicon-menu-left flechaIzqHistoria" onclick="cambiaCalendario('3','Left')" style="margin-top:300px;"></span>
 					</div>
    		 		<div class="col-md-10">
@@ -295,8 +296,10 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/rieleros.js"></script>
-  <!--  <script>
-        acomodaBotonRegresar();
-    </script> -->
+    <script>
+        $( document ).ready(function() {
+            document.getElementById("instruccion").play();
+        });
+    </script> 
 </body>
 </html>

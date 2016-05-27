@@ -172,7 +172,8 @@ table > .diasCalendario > tr > .diaPartido {
 	text-align: center;
 	font-size: 18pt;
 	width: 65px;
-	height: 60px;
+	height: 60px; 
+	background-color: rgba(129, 131, 131, 0.2);
 }
 
 .estadisticas > tbody > tr > td{
@@ -244,7 +245,7 @@ table > .diasCalendario > tr > .diaPartido {
 }
 
 .posiciones > thead > tr {
-	background-color: #707070;
+	background-color: rgba(129, 131, 131, 0.2);
 }
 
 .posiciones > thead> tr > th{
@@ -254,5 +255,22 @@ table > .diasCalendario > tr > .diaPartido {
 
 .posiciones > tbody > tr > td {
 	text-align: center;
+	height: 50px;
 }
 
+.cuponProducto{
+	font-weight:900;
+	color: black;
+	width: 800px;
+	height: 500px;
+	background-image: url(../images/valeProducto.png);
+	text-align: left;
+}
+
+.cuponProducto > h3 {
+	margin-left: 160px;
+}
+
+.cuponProducto > h5 {
+	margin-left: 160px;
+}
